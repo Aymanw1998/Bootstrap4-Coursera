@@ -1,0 +1,510 @@
+WEBVTT
+
+1
+00:00:00.000 --> 00:00:04.717
+[MUSIC]
+
+2
+00:00:04.717 --> 00:00:09.290
+These days in web development world,
+we often hear people
+
+3
+00:00:09.290 --> 00:00:14.721
+mentioning the terms responsive design and
+mobile first approach.
+
+4
+00:00:14.721 --> 00:00:18.558
+Let's try and understand what
+is meant by these terms, and
+
+5
+00:00:18.558 --> 00:00:23.480
+how they affect the way you design your
+websites and your web applications.
+
+6
+00:00:25.490 --> 00:00:30.745
+Your obvious question is going to
+be why consider responsive design?
+
+7
+00:00:30.745 --> 00:00:38.040
+To help us understand this, let's consider
+how people access websites these days?
+
+8
+00:00:38.040 --> 00:00:42.980
+Traditionally, when websites were first
+designed, you could pretty much assume
+
+9
+00:00:42.980 --> 00:00:47.100
+that people will be browsing
+your websites from a computer.
+
+10
+00:00:48.170 --> 00:00:55.694
+These days your websites could be
+visited from a smartphone, a tablet or
+
+11
+00:00:55.694 --> 00:01:02.250
+a computer with different screen sizes and
+screen resolutions.
+
+12
+00:01:02.250 --> 00:01:09.350
+How do we render our websites consistently
+on devices of different screen sizes?
+
+13
+00:01:10.530 --> 00:01:14.570
+The one size fits all
+approach that traditional
+
+14
+00:01:14.570 --> 00:01:19.020
+website designers have
+taken no longer fixed bill.
+
+15
+00:01:19.020 --> 00:01:24.338
+We need a better approach,
+an approach that will automatically
+
+16
+00:01:24.338 --> 00:01:30.940
+adapt your website to the size of
+the screen on which it is being viewed.
+
+17
+00:01:30.940 --> 00:01:38.190
+This is where we have to take an approach
+to adapt to the user's view port.
+
+18
+00:01:38.190 --> 00:01:42.890
+This has to be built into your
+website design and development so
+
+19
+00:01:42.890 --> 00:01:49.000
+that it will automatically adapt to
+the viewport of the user's device.
+
+20
+00:01:50.260 --> 00:01:53.437
+To help you better appreciate the need for
+
+21
+00:01:53.437 --> 00:01:57.170
+addressing devices of
+different screen sizes.
+
+22
+00:01:57.170 --> 00:02:03.273
+I am taking the help of the developer
+options that might Safari browser
+
+23
+00:02:03.273 --> 00:02:10.110
+provides that enables me to view the
+website with screens of different sizes.
+
+24
+00:02:10.110 --> 00:02:15.470
+So that hopefully will convince of you
+of why we made responsive web design.
+
+25
+00:02:15.470 --> 00:02:19.622
+So here you see that
+Coursera website being
+
+26
+00:02:19.622 --> 00:02:24.476
+rendered on a 1920 by 1080 screen sites.
+
+27
+00:02:24.476 --> 00:02:32.088
+This would be a typical large desktop or
+a high resolution laptop screen.
+
+28
+00:02:32.088 --> 00:02:38.810
+Then let's consider the same website
+being viewed using a smaller screen such.
+
+29
+00:02:38.810 --> 00:02:44.126
+So you see automatically your
+screen layout is slightly
+
+30
+00:02:44.126 --> 00:02:49.214
+adjusting to the size of
+the viewport of your device,
+
+31
+00:02:49.214 --> 00:02:52.281
+same thing at 800 by 600.
+
+32
+00:02:52.281 --> 00:02:59.708
+So let's go down in screen sizes, this
+is an iPad close view of the same site.
+
+33
+00:02:59.708 --> 00:03:05.826
+This is an iPad Air 2 size,
+this is an iPad Mini 4 size,
+
+34
+00:03:05.826 --> 00:03:10.125
+note the transition from an iPad Mini 4
+
+35
+00:03:10.125 --> 00:03:15.610
+size to an iPhone 6S
+Plus in portrait mode.
+
+36
+00:03:15.610 --> 00:03:23.090
+You'll now notice that the Navigation Bot
+has now collapsed into a button here,
+
+37
+00:03:23.090 --> 00:03:28.850
+which when you click will reveal
+the options from your Navigation Bash.
+
+38
+00:03:28.850 --> 00:03:35.027
+And let's look at the same
+thing in our iPhone 6S
+
+39
+00:03:35.027 --> 00:03:40.990
+in landscape mode,
+note how the screen adopts itself.
+
+40
+00:03:40.990 --> 00:03:46.578
+Similarly for
+an iPhone 6S in landscape mode and
+
+41
+00:03:46.578 --> 00:03:52.300
+go down to an iPhone SE,
+and you see how the website
+
+42
+00:03:52.300 --> 00:03:56.941
+has change the way it is being rendered.
+
+43
+00:03:56.941 --> 00:04:03.395
+So hopefully, this example has
+illustrated to you how and
+
+44
+00:04:03.395 --> 00:04:07.357
+why we need responsive web design.
+
+45
+00:04:07.357 --> 00:04:12.240
+The second related concept that
+you will hear is mobile first.
+
+46
+00:04:12.240 --> 00:04:17.749
+The mobile first approach instead
+looks at designing a website for
+
+47
+00:04:17.749 --> 00:04:19.725
+a mobile device first.
+
+48
+00:04:19.725 --> 00:04:27.465
+So consider how you would satisfy the
+screen constraints of your mobile device.
+
+49
+00:04:27.465 --> 00:04:32.472
+And then as your screen size expands,
+you would automatically
+
+50
+00:04:32.472 --> 00:04:38.162
+start an app to your website to
+the larger and larger screen sizes.
+
+51
+00:04:38.162 --> 00:04:41.548
+Perhaps, you're willing more and
+more of the content.
+
+52
+00:04:41.548 --> 00:04:47.050
+So as to take advantage of
+the increasing screen real estate.
+
+53
+00:04:47.050 --> 00:04:51.974
+So the same website when seeing on
+a mobile device might have only
+
+54
+00:04:51.974 --> 00:04:56.091
+parts of the information
+being revealed to the user.
+
+55
+00:04:56.091 --> 00:05:00.754
+But then when rendered on
+a full fledge desktop it
+
+56
+00:05:00.754 --> 00:05:05.960
+might show a lot more detail
+version of the website.
+
+57
+00:05:05.960 --> 00:05:11.020
+Now this has to be automatically
+adapted based upon the information
+
+58
+00:05:11.020 --> 00:05:16.180
+that you get from the device from
+which your website is being viewed.
+
+59
+00:05:16.180 --> 00:05:18.519
+So how do we get this information?
+
+60
+00:05:18.519 --> 00:05:23.610
+Fortunately, doing responsive
+web design is supported by
+
+61
+00:05:23.610 --> 00:05:29.950
+many of the modern front end web
+UI frameworks including Bootstrap.
+
+62
+00:05:29.950 --> 00:05:37.230
+So when we look at Bootstrap's
+definition on it's webpage it says,
+
+63
+00:05:37.230 --> 00:05:41.128
+responsive mobile first approach.
+
+64
+00:05:41.128 --> 00:05:43.985
+Yeah, how do we go by doing
+responsive web design?
+
+65
+00:05:43.985 --> 00:05:49.858
+So there are several concepts that
+are built in to your frame time
+
+66
+00:05:49.858 --> 00:05:57.170
+web UI frameworks that come to the aid
+when you need to do responsive web design.
+
+67
+00:05:57.170 --> 00:06:00.819
+First and foremost is what
+is called is a Grid system?
+
+68
+00:06:00.819 --> 00:06:05.624
+We're going to look at the Bootstrap's
+Grid system in more detail in the next
+
+69
+00:06:05.624 --> 00:06:06.319
+lecture.
+
+70
+00:06:06.319 --> 00:06:11.201
+So that we'll understand exactly how
+we can leverage that to be able to do
+
+71
+00:06:11.201 --> 00:06:13.720
+responsive web design.
+
+72
+00:06:13.720 --> 00:06:21.110
+The second aspect is fluid images, so
+that your images that you include in your
+
+73
+00:06:21.110 --> 00:06:26.940
+website will automatically adapt
+itself to the screen size.
+
+74
+00:06:26.940 --> 00:06:34.890
+And the third part is what is called
+a CSS media queries from your CSS code.
+
+75
+00:06:34.890 --> 00:06:41.110
+You can query the size of the media and
+then appropriately adjust your CSS classes
+
+76
+00:06:41.110 --> 00:06:46.230
+to fit the size of the device's screen.
+
+77
+00:06:46.230 --> 00:06:48.730
+Now how do media queries work?
+
+78
+00:06:48.730 --> 00:06:50.950
+Let's look at that next.
+
+79
+00:06:50.950 --> 00:06:55.080
+Media queries are supported
+in CSS like this.
+
+80
+00:06:55.080 --> 00:07:00.930
+So the technology allows you to do a media
+query to specify the minimum width
+
+81
+00:07:00.930 --> 00:07:07.730
+of the screen under which this particular
+set of CSS classes will be active.
+
+82
+00:07:07.730 --> 00:07:12.267
+So this would be specified in
+your CSS file as @media, and
+
+83
+00:07:12.267 --> 00:07:17.187
+then within bracket,
+you specify for example, min-width.
+
+84
+00:07:17.187 --> 00:07:21.231
+There are a lot more options to the media
+queries than what I'm showing here.
+
+85
+00:07:21.231 --> 00:07:28.750
+This is just one example of how you would
+build a media query in your CSS code.
+
+86
+00:07:30.060 --> 00:07:34.990
+Taking a look at
+Bootstrap's CSS code itself,
+
+87
+00:07:34.990 --> 00:07:40.910
+let's go in and see how media
+queries are being used by Bootstrap.
+
+88
+00:07:40.910 --> 00:07:45.789
+So here you see an example of a media
+query where it says, @media and
+
+89
+00:07:45.789 --> 00:07:47.854
+min-width 576 pixels.
+
+90
+00:07:47.854 --> 00:07:54.906
+And then it specifies that those
+particular CSS class call container,
+
+91
+00:07:54.906 --> 00:07:59.960
+which we will learn more
+about in the next lecture,
+
+92
+00:07:59.960 --> 00:08:04.150
+and also in the exercise that follows.
+
+93
+00:08:04.150 --> 00:08:12.640
+We will see that the container's width is
+set based upon the width of the screen.
+
+94
+00:08:12.640 --> 00:08:17.590
+Similarly, for a higher width screen, the
+container width is automatically adjusted.
+
+95
+00:08:17.590 --> 00:08:22.251
+So this is what enables
+your web UI framework to
+
+96
+00:08:22.251 --> 00:08:25.604
+support responsive web design.
+
+97
+00:08:25.604 --> 00:08:30.762
+So doing media queries,
+your web UI framework is able to
+
+98
+00:08:30.762 --> 00:08:36.928
+establish what kind of device
+you're rendering your website on.
+
+99
+00:08:36.928 --> 00:08:41.849
+And correspondingly
+adjust the CSS classes to
+
+100
+00:08:41.849 --> 00:08:46.401
+fit that particular devices screen size.
+
+101
+00:08:46.401 --> 00:08:50.821
+So then obviously, the next question that
+is going to come in your mind is how do we
+
+102
+00:08:50.821 --> 00:08:52.870
+do this in practice?
+
+103
+00:08:52.870 --> 00:08:56.540
+Fortunately, if you start
+with a well designed
+
+104
+00:08:56.540 --> 00:09:01.700
+front end web UI framework like Bootstrap,
+things become very straightforward.
+
+105
+00:09:01.700 --> 00:09:08.023
+We will learn more about this in the next
+lecture and the exercise that follows.
+
+106
+00:09:08.023 --> 00:09:13.999
+[MUSIC]

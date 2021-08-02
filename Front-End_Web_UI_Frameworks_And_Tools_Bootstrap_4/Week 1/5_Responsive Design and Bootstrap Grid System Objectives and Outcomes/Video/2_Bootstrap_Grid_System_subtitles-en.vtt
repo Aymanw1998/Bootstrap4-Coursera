@@ -1,0 +1,1433 @@
+WEBVTT
+
+1
+00:00:03.550 --> 00:00:05.885
+In the previous lecture,
+
+2
+00:00:05.885 --> 00:00:08.860
+we learnt about responsive design.
+
+3
+00:00:08.860 --> 00:00:12.300
+We also briefly mentioned that the Bootstrap grid system is
+
+4
+00:00:12.300 --> 00:00:16.505
+designed for supporting responsive websites.
+
+5
+00:00:16.505 --> 00:00:20.275
+How does Bootstraps grid support this?
+
+6
+00:00:20.275 --> 00:00:23.765
+And what exactly does Bootstrap grid involve,
+
+7
+00:00:23.765 --> 00:00:27.710
+that enables us to design responsive websites?
+
+8
+00:00:27.710 --> 00:00:32.535
+Let's talk a bit more detail about the Bootstrap grid system,
+
+9
+00:00:32.535 --> 00:00:36.700
+and how it supports responsiveness next.
+
+10
+00:00:36.700 --> 00:00:45.450
+We saw the use of the viewport meta tag in the previous lesson,
+
+11
+00:00:45.450 --> 00:00:53.590
+when we did the initial exercise on setting up Bootstrap in our index.html page.
+
+12
+00:00:53.590 --> 00:00:58.790
+I briefly referred to this particular line in the code then.
+
+13
+00:00:58.790 --> 00:01:05.015
+Let's try to understand why we use this in our index.html page.
+
+14
+00:01:05.015 --> 00:01:08.090
+What we are specifying here is that,
+
+15
+00:01:08.090 --> 00:01:14.555
+when our web page is being rendered by the browser in a particular device, then,
+
+16
+00:01:14.555 --> 00:01:20.970
+their rendering in the browser will take into account the size of the screen and
+
+17
+00:01:20.970 --> 00:01:28.080
+automatically adapt the rendering of the page to the devices screen width.
+
+18
+00:01:28.080 --> 00:01:32.090
+That way, then we have responsive classes,
+
+19
+00:01:32.090 --> 00:01:35.740
+CSS classes built into our UI framework,
+
+20
+00:01:35.740 --> 00:01:39.030
+then that will ensure that our web page is
+
+21
+00:01:39.030 --> 00:01:42.855
+correctly rendered for that particular screen size.
+
+22
+00:01:42.855 --> 00:01:46.930
+This is where the Bootstrap grid system comes to our rescue and
+
+23
+00:01:46.930 --> 00:01:51.000
+enables us to design responsive websites.
+
+24
+00:01:51.000 --> 00:01:53.480
+So again, emphasizing this point,
+
+25
+00:01:53.480 --> 00:01:57.100
+Bootstrap grid is designed to be responsive.
+
+26
+00:01:57.100 --> 00:02:01.525
+You have already seen what this means in the previous lecture,
+
+27
+00:02:01.525 --> 00:02:07.845
+and mobile first, which we have already discussed in the previous lecture and then fluid,
+
+28
+00:02:07.845 --> 00:02:11.055
+automatically adapting to the screen width.
+
+29
+00:02:11.055 --> 00:02:16.220
+The Bootstrap grid takes advantage of the CSS flexbox layout.
+
+30
+00:02:16.220 --> 00:02:19.860
+The CSS flexbox layout which is being supported by
+
+31
+00:02:19.860 --> 00:02:23.955
+the more recent versions of the various browsers,
+
+32
+00:02:23.955 --> 00:02:30.070
+enables a lot more simpler and flexible layout options in CSS.
+
+33
+00:02:30.070 --> 00:02:31.980
+Now, the actual discussion of
+
+34
+00:02:31.980 --> 00:02:36.800
+how CSS flexbox layout works is beyond the scope of this course,
+
+35
+00:02:36.800 --> 00:02:41.040
+we will restrict ourselves to how CSS flexbox is being
+
+36
+00:02:41.040 --> 00:02:45.565
+leveraged by Bootstrap for its grid system.
+
+37
+00:02:45.565 --> 00:02:54.710
+Earlier Bootstrap had its own grid system which was predating the CSS flexbox layout,
+
+38
+00:02:54.710 --> 00:02:58.840
+but the latest version of Bootstrap
+
+39
+00:02:58.840 --> 00:03:06.650
+has made the CSS flexbox layout as the standard for the Bootstrap grid.
+
+40
+00:03:06.650 --> 00:03:10.375
+This flexbox layout can easily handle
+
+41
+00:03:10.375 --> 00:03:17.390
+dynamic content and can adapt the containers to the dynamic content,
+
+42
+00:03:17.390 --> 00:03:20.780
+and also can easily adapt to unknown size of
+
+43
+00:03:20.780 --> 00:03:24.890
+the actual content enclosed inside the containers.
+
+44
+00:03:24.890 --> 00:03:30.320
+The flexbox layout also supports direction-agnostic layout.
+
+45
+00:03:30.320 --> 00:03:37.084
+What the flexbox layout brings to the Bootstrap grids is the ability
+
+46
+00:03:37.084 --> 00:03:44.005
+to do easy vertical alignment of the content within a parent element.
+
+47
+00:03:44.005 --> 00:03:48.595
+We"ll see the use of this in the exercise that follows.
+
+48
+00:03:48.595 --> 00:03:52.625
+Also, it allows easy reordering of the content
+
+49
+00:03:52.625 --> 00:03:58.170
+across different devices and screen resolutions with the help of media queries.
+
+50
+00:03:58.170 --> 00:04:03.050
+Again we'll see a little bit of that in the exercise on how Bootstrap
+
+51
+00:04:03.050 --> 00:04:08.645
+leverages that to support interesting ways of laying out content.
+
+52
+00:04:08.645 --> 00:04:11.670
+Also, that content itself,
+
+53
+00:04:11.670 --> 00:04:19.275
+the content containers can also be designed to be equal height columns so that
+
+54
+00:04:19.275 --> 00:04:25.245
+the content container with the largest height determines
+
+55
+00:04:25.245 --> 00:04:32.915
+the height of all the remaining containers that are laid out in the same row.
+
+56
+00:04:32.915 --> 00:04:39.375
+Let's now talk a little more details about the Bootstrap grid and how it actually works.
+
+57
+00:04:39.375 --> 00:04:41.400
+The way the Bootstrap grid works,
+
+58
+00:04:41.400 --> 00:04:48.765
+is by applying a container plus to the outermost layer.
+
+59
+00:04:48.765 --> 00:04:51.815
+We might use a div for
+
+60
+00:04:51.815 --> 00:04:57.075
+defining the element for which we apply the container class in general.
+
+61
+00:04:57.075 --> 00:05:03.855
+The container is the outermost unit within which the actual content is laid out.
+
+62
+00:05:03.855 --> 00:05:10.220
+Bootstrap supports both the container class which is a fixed width layout,
+
+63
+00:05:10.220 --> 00:05:16.010
+which means that the content itself is restricted to a fixed width on the screen.
+
+64
+00:05:16.010 --> 00:05:22.420
+This container class enables this fixed width to automatically adapt itself to
+
+65
+00:05:22.420 --> 00:05:25.920
+the size of the screen by using media queries so that
+
+66
+00:05:25.920 --> 00:05:29.695
+is where the responsive design comes into our rescue.
+
+67
+00:05:29.695 --> 00:05:36.340
+Later on, we will see how this container will adjust to different screen sizes.
+
+68
+00:05:36.340 --> 00:05:39.490
+Now, we also have the flexibility of using in
+
+69
+00:05:39.490 --> 00:05:42.684
+other classical container fluid which enables
+
+70
+00:05:42.684 --> 00:05:49.200
+the container to automatically adapt to the size of the screen.
+
+71
+00:05:49.200 --> 00:05:50.855
+But the fixed width container,
+
+72
+00:05:50.855 --> 00:05:56.270
+fixes the size of the actual layout width.
+
+73
+00:05:56.270 --> 00:06:01.370
+Inside the container, the content will be laid out in the form of rows,
+
+74
+00:06:01.370 --> 00:06:04.770
+so typically what we would do is inside
+
+75
+00:06:04.770 --> 00:06:08.360
+and out of div to which we apply the container class,
+
+76
+00:06:08.360 --> 00:06:12.440
+we"ll include an inner div to which we will apply the row class.
+
+77
+00:06:12.440 --> 00:06:17.550
+So, the content itself will be vertically divided into multiple rows.
+
+78
+00:06:17.550 --> 00:06:21.000
+And once this is divided into rows, within each row,
+
+79
+00:06:21.000 --> 00:06:25.995
+you can then layout the content using columns.
+
+80
+00:06:25.995 --> 00:06:28.810
+So, each row in Bootstrap,
+
+81
+00:06:28.810 --> 00:06:34.565
+will be divided into 12 equal sized columns.
+
+82
+00:06:34.565 --> 00:06:43.820
+Now, you can design your content to occupy any number of these 12 columns.
+
+83
+00:06:43.820 --> 00:06:48.900
+So, and the fact that the content itself adapts to
+
+84
+00:06:48.900 --> 00:06:51.310
+the screen width and the row itself being
+
+85
+00:06:51.310 --> 00:06:54.710
+enclosed inside the container will automatically adapt to the screen width,
+
+86
+00:06:54.710 --> 00:06:58.120
+and also the columns,
+
+87
+00:06:58.120 --> 00:07:01.320
+the 12 columns will be determined.
+
+88
+00:07:01.320 --> 00:07:05.010
+Their widths will be determined by the row by itself.
+
+89
+00:07:05.010 --> 00:07:08.520
+So, which means that for a different screen sizes,
+
+90
+00:07:08.520 --> 00:07:12.470
+whatever content you layout all of those 12 columns will automatically adjust
+
+91
+00:07:12.470 --> 00:07:18.220
+itself to the width that is allowed for the content.
+
+92
+00:07:18.220 --> 00:07:21.990
+So, this is how the responsiveness is built
+
+93
+00:07:21.990 --> 00:07:27.370
+into the Bootstrap grid way of laying out the content.
+
+94
+00:07:27.370 --> 00:07:30.285
+So, how exactly do we layout the content?
+
+95
+00:07:30.285 --> 00:07:33.845
+We'll talk about that in the next few slides.
+
+96
+00:07:33.845 --> 00:07:36.315
+The Bootstrap grid itself,
+
+97
+00:07:36.315 --> 00:07:45.160
+makes available to us five classes to specify different screen sizes by default.
+
+98
+00:07:45.160 --> 00:07:49.870
+There is a default class which targets all screen sizes,
+
+99
+00:07:49.870 --> 00:07:53.210
+starting from extra small to extra large.
+
+100
+00:07:53.210 --> 00:07:59.205
+So the entire range of screen widths in Bootstrap terms,
+
+101
+00:07:59.205 --> 00:08:02.884
+is divided into extra small, small,
+
+102
+00:08:02.884 --> 00:08:07.405
+medium, large, and extra large screen sizes.
+
+103
+00:08:07.405 --> 00:08:11.180
+Then look at how these different classes
+
+104
+00:08:11.180 --> 00:08:16.350
+of screen sizes are determined in detail in one of the later slides.
+
+105
+00:08:16.350 --> 00:08:18.540
+So, within your code,
+
+106
+00:08:18.540 --> 00:08:22.830
+you will identify the layout specification by
+
+107
+00:08:22.830 --> 00:08:29.060
+specifying sm for the small screen size,
+
+108
+00:08:29.060 --> 00:08:32.195
+md for medium, lg for large,
+
+109
+00:08:32.195 --> 00:08:35.905
+and xl for extra large screen sizes.
+
+110
+00:08:35.905 --> 00:08:37.400
+So, when you do the layout,
+
+111
+00:08:37.400 --> 00:08:40.345
+as we saw in the previous slide,
+
+112
+00:08:40.345 --> 00:08:45.405
+every row in a Bootstrap grid system is divided into 12 columns.
+
+113
+00:08:45.405 --> 00:08:50.905
+Now, we will layout content using what is called as the column classes.
+
+114
+00:08:50.905 --> 00:08:52.450
+For the column classes,
+
+115
+00:08:52.450 --> 00:08:59.162
+we can specify how the layout is done for different screen widths.
+
+116
+00:08:59.162 --> 00:09:04.735
+Look at the details of this in the subsequent slides later.
+
+117
+00:09:04.735 --> 00:09:11.020
+But let me quickly draw your attention to how we specify the column sizes.
+
+118
+00:09:11.020 --> 00:09:13.655
+They might specify the column sizes as col,
+
+119
+00:09:13.655 --> 00:09:19.485
+which is one of the classes they will say col-sm for
+
+120
+00:09:19.485 --> 00:09:25.360
+small and col-md for medium and large and extra large and so on.
+
+121
+00:09:25.360 --> 00:09:29.810
+Now, these column classes are used to specify
+
+122
+00:09:29.810 --> 00:09:38.260
+exactly how many columns in a row will each piece of content occupy.
+
+123
+00:09:38.260 --> 00:09:40.015
+How does this work?
+
+124
+00:09:40.015 --> 00:09:42.215
+We'll see that in the next slide.
+
+125
+00:09:42.215 --> 00:09:45.565
+So, going back to our Bootstrap Grid,
+
+126
+00:09:45.565 --> 00:09:50.345
+suppose we have a piece of content and we want to lay out the peace of content.
+
+127
+00:09:50.345 --> 00:09:54.915
+We can specify that that content is enclosed inside another div,
+
+128
+00:09:54.915 --> 00:09:57.815
+to which we apply column class,
+
+129
+00:09:57.815 --> 00:10:00.390
+like for example, col-sm-5.
+
+130
+00:10:00.390 --> 00:10:08.560
+So, in that case, what we are specifying is that for small to extra large screen sizes,
+
+131
+00:10:08.560 --> 00:10:15.890
+this piece of content will occupy five columns out of those 12 columns.
+
+132
+00:10:15.890 --> 00:10:17.505
+Now, you are going to immediately ask me,
+
+133
+00:10:17.505 --> 00:10:19.835
+what about the extra smocking?
+
+134
+00:10:19.835 --> 00:10:23.465
+If it is not explicitly specified for the extra smarted lockette
+
+135
+00:10:23.465 --> 00:10:27.120
+by the entire breadth of the 12 columns,
+
+136
+00:10:27.120 --> 00:10:31.575
+they can explicitly specify from which range to
+
+137
+00:10:31.575 --> 00:10:38.135
+which range the column layout will occupy how many of the columns.
+
+138
+00:10:38.135 --> 00:10:39.890
+So, in this particular case,
+
+139
+00:10:39.890 --> 00:10:42.470
+when I specify I only call them sm-5,
+
+140
+00:10:42.470 --> 00:10:48.295
+what I mean is that this particular content that is enclosed inside those div,
+
+141
+00:10:48.295 --> 00:10:52.375
+will occupy five columns for all screen sizes,
+
+142
+00:10:52.375 --> 00:10:56.595
+from small all the way to extra large.
+
+143
+00:10:56.595 --> 00:11:00.595
+Now, we now see that out of the 12 columns,
+
+144
+00:11:00.595 --> 00:11:02.515
+we have already occupied five columns.
+
+145
+00:11:02.515 --> 00:11:05.070
+There are still seven more columns left.
+
+146
+00:11:05.070 --> 00:11:09.925
+I could take another piece of content and then position it to the right of this,
+
+147
+00:11:09.925 --> 00:11:14.085
+by defending another div and then applying column sm-7.
+
+148
+00:11:14.085 --> 00:11:15.855
+Now, in this case,
+
+149
+00:11:15.855 --> 00:11:18.065
+you see that 5 plus 7 is equal to 12.
+
+150
+00:11:18.065 --> 00:11:22.900
+So, these two pieces of content that are enclosed in the two divs,
+
+151
+00:11:22.900 --> 00:11:25.530
+will now be positioned side by side,
+
+152
+00:11:25.530 --> 00:11:30.070
+and the sum total of them is occupying the entire 12 column width.
+
+153
+00:11:30.070 --> 00:11:35.765
+So, this is how we can specify and the work with the 12 columns
+
+154
+00:11:35.765 --> 00:11:42.630
+in defining the layout of the current tier.
+
+155
+00:11:42.630 --> 00:11:46.960
+With the use of the CSS flex box layout,
+
+156
+00:11:46.960 --> 00:11:51.660
+Bootstrap also supports what is called the Auto-layout Columns.
+
+157
+00:11:51.660 --> 00:11:52.905
+So, in this case,
+
+158
+00:11:52.905 --> 00:11:55.380
+I can simply specify
+
+159
+00:11:55.380 --> 00:12:00.060
+column sm without specifying how many columns it is supposed to occupy.
+
+160
+00:12:00.060 --> 00:12:07.570
+But in case I specify three Doobs width column sm in my heml 5,
+
+161
+00:12:07.570 --> 00:12:13.575
+then the bootstrap grid will automatically position these contents inside those divs,
+
+162
+00:12:13.575 --> 00:12:14.905
+side by side, so,
+
+163
+00:12:14.905 --> 00:12:18.875
+that each one of them gets one third of the total width.
+
+164
+00:12:18.875 --> 00:12:22.220
+So, since we have 12 columns here,
+
+165
+00:12:22.220 --> 00:12:26.045
+each of these three will get four columns each.
+
+166
+00:12:26.045 --> 00:12:32.525
+And this is automatically taken care of by the bootstraps layout mechanism.
+
+167
+00:12:32.525 --> 00:12:35.550
+Now, we can explicitly specify
+
+168
+00:12:35.550 --> 00:12:40.375
+the number of columns a particular piece of content occupy.
+
+169
+00:12:40.375 --> 00:12:45.625
+So, for example, suppose I specify three column classes,
+
+170
+00:12:45.625 --> 00:12:49.565
+but the middle one I specify column sm 6.
+
+171
+00:12:49.565 --> 00:12:52.615
+Then what happens is, when bootstrap does the layout,
+
+172
+00:12:52.615 --> 00:12:55.760
+the middle one will occupy six columns,
+
+173
+00:12:55.760 --> 00:13:01.885
+and then the left and the right pieces of content will occupy whatever is left off.
+
+174
+00:13:01.885 --> 00:13:04.785
+So, out of the 12 columns that we have,
+
+175
+00:13:04.785 --> 00:13:08.630
+if 6 columns that occupied by the middle piece of content,
+
+176
+00:13:08.630 --> 00:13:12.855
+then we have left with us 6 more columns and that will be equally
+
+177
+00:13:12.855 --> 00:13:17.965
+divided between the contents and the two sides of this middle column.
+
+178
+00:13:17.965 --> 00:13:23.585
+So, each of them will get free columns of space each.
+
+179
+00:13:23.585 --> 00:13:27.730
+So, that is how the layout is automatically done with Bootstrap.
+
+180
+00:13:27.730 --> 00:13:34.110
+In the exercise, we will see various combinations of use of these kind of
+
+181
+00:13:34.110 --> 00:13:43.680
+specifications of how many columns each piece of content will occupy in color layout.
+
+182
+00:13:43.680 --> 00:13:49.135
+This table summarizes the way Bootstrap treats
+
+183
+00:13:49.135 --> 00:13:54.860
+the different screen grids and correspondingly how you identify these screen grids.
+
+184
+00:13:54.860 --> 00:13:57.095
+So, as I specified earlier,
+
+185
+00:13:57.095 --> 00:14:04.580
+Bootstrap divides the entire screen width range into 5 classes.
+
+186
+00:14:04.580 --> 00:14:12.890
+The extra small screens are those whose grids are below 776 pixels.
+
+187
+00:14:12.890 --> 00:14:22.090
+Small screens are those that are between 576 and below 768 pixels.
+
+188
+00:14:22.090 --> 00:14:25.600
+Medium screens from 768 to 992,
+
+189
+00:14:25.600 --> 00:14:31.380
+large from 992 to 1200 and anything about 1200 pixels width
+
+190
+00:14:31.380 --> 00:14:34.685
+is treated to be an extra large screen.
+
+191
+00:14:34.685 --> 00:14:39.390
+So, this is how the default Bootstrap Grid is configured.
+
+192
+00:14:39.390 --> 00:14:43.570
+Now, once you get comfortable with Bootstrap,
+
+193
+00:14:43.570 --> 00:14:48.595
+you can also configure these divisions yourself.
+
+194
+00:14:48.595 --> 00:14:50.770
+But for this course,
+
+195
+00:14:50.770 --> 00:14:56.210
+we're going to stay with the default configuration that bootstrap supports.
+
+196
+00:14:56.210 --> 00:14:59.195
+Now, the grid behavior in this case,
+
+197
+00:14:59.195 --> 00:15:01.825
+is that whatever is laid out for extra small,
+
+198
+00:15:01.825 --> 00:15:04.885
+will be horizontal at all times,
+
+199
+00:15:04.885 --> 00:15:09.235
+for the higher bits they'll be collapsed to 2start width,
+
+200
+00:15:09.235 --> 00:15:13.040
+but horizontal about the break points.
+
+201
+00:15:13.040 --> 00:15:17.855
+We'll see how this works in a short while with some examples.
+
+202
+00:15:17.855 --> 00:15:24.980
+Now, we saw the use of the container in the previous slide.
+
+203
+00:15:24.980 --> 00:15:28.545
+For extra small screens,
+
+204
+00:15:28.545 --> 00:15:32.895
+the container width is automatically determined by the screen width.
+
+205
+00:15:32.895 --> 00:15:34.575
+But for small, medium,
+
+206
+00:15:34.575 --> 00:15:36.045
+large and extra large,
+
+207
+00:15:36.045 --> 00:15:39.425
+the container width is as specified.
+
+208
+00:15:39.425 --> 00:15:42.600
+So, if you use the div with a class container,
+
+209
+00:15:42.600 --> 00:15:46.105
+then for small screens it is 540 pixels.
+
+210
+00:15:46.105 --> 00:15:52.330
+So, you'll notice that if you have a screen width between 576 to 768,
+
+211
+00:15:52.330 --> 00:15:56.485
+your content will be laid out in 540 pixels,
+
+212
+00:15:56.485 --> 00:16:00.670
+will be centered in the screen width.
+
+213
+00:16:00.670 --> 00:16:08.435
+So, the leftover space will be left as margins on either side of this content.
+
+214
+00:16:08.435 --> 00:16:12.795
+Similarly, for medium it is 720 pixels and so on.
+
+215
+00:16:12.795 --> 00:16:17.640
+Now, then you specify how many columns each content occupies.
+
+216
+00:16:17.640 --> 00:16:20.885
+Then the column class prefixes that you will use
+
+217
+00:16:20.885 --> 00:16:26.670
+is.col for extra small,.col-sm for small,
+
+218
+00:16:26.670 --> 00:16:29.420
+all the way to extra large.
+
+219
+00:16:29.420 --> 00:16:31.625
+If you specify something with.col-md,
+
+220
+00:16:31.625 --> 00:16:36.530
+then that applies for medium to extra large screens.
+
+221
+00:16:36.530 --> 00:16:41.785
+So, whenever you specify any col- and some numbers,
+
+222
+00:16:41.785 --> 00:16:47.895
+then that applies to that particular screen size and everything about that screen size.
+
+223
+00:16:47.895 --> 00:16:51.035
+Now, in all screen size cases,
+
+224
+00:16:51.035 --> 00:16:54.955
+the number of columns is defined to be 12 columns.
+
+225
+00:16:54.955 --> 00:17:02.345
+The grid in case of bootstrap is designed to be 12 columns and that is configurable,
+
+226
+00:17:02.345 --> 00:17:04.830
+but the default value is 12 columns.
+
+227
+00:17:04.830 --> 00:17:10.355
+The reason for choosing 12 is that 12 is a good multiple of two,three,
+
+228
+00:17:10.355 --> 00:17:11.755
+four and so on.
+
+229
+00:17:11.755 --> 00:17:14.965
+So it gives you a lot of flexibility in terms of
+
+230
+00:17:14.965 --> 00:17:19.065
+how many columns you choose to lay out your content.
+
+231
+00:17:19.065 --> 00:17:22.345
+Between each column, so if you lay
+
+232
+00:17:22.345 --> 00:17:25.510
+out two pieces of content side by side with their divs,
+
+233
+00:17:25.510 --> 00:17:31.035
+between these two pieces of content they'll be a small gutter that will be left.
+
+234
+00:17:31.035 --> 00:17:37.255
+Empty white space that'll be left off width the gutter width,
+
+235
+00:17:37.255 --> 00:17:41.030
+which is just 30 pixels by default.
+
+236
+00:17:41.030 --> 00:17:45.855
+So, 15 pixels is from one piece of content and 15 pixels from other piece of content.
+
+237
+00:17:45.855 --> 00:17:48.600
+SumTotal together 30 pixels of
+
+238
+00:17:48.600 --> 00:17:53.470
+white space will be left between the two pieces of content.
+
+239
+00:17:53.470 --> 00:17:57.465
+Think about how a newspaper column layout
+
+240
+00:17:57.465 --> 00:18:01.530
+is done and you begin to see the correspondence between
+
+241
+00:18:01.530 --> 00:18:04.970
+the newspaper column layout is done and how
+
+242
+00:18:04.970 --> 00:18:10.815
+the bootstrap's grid does the layout of the content on that pitch.
+
+243
+00:18:10.815 --> 00:18:14.725
+Bootastrap's grid allows you to do next level content,
+
+244
+00:18:14.725 --> 00:18:20.710
+so you can enclose content inside content and then do nested content layout.
+
+245
+00:18:20.710 --> 00:18:23.790
+Also, it supports offsets.
+
+246
+00:18:23.790 --> 00:18:28.712
+We will see the use of offsets also in some examples later.
+
+247
+00:18:28.712 --> 00:18:36.555
+So let's look at our first example of how you would apply bootstraps column classes,
+
+248
+00:18:36.555 --> 00:18:41.515
+and how they would actually be rendered on different screen sizes.
+
+249
+00:18:41.515 --> 00:18:47.310
+Here is an example of a situation where I applied to the two divs,
+
+250
+00:18:47.310 --> 00:18:53.510
+column hyphen 12 and then column hyphen sm hyphen five for
+
+251
+00:18:53.510 --> 00:18:56.050
+the red piece of content and for
+
+252
+00:18:56.050 --> 00:19:00.980
+the other one I applied column hyphen 12 and column sm seven.
+
+253
+00:19:00.980 --> 00:19:06.045
+So the way this content will be laid out is for extra small screens,
+
+254
+00:19:06.045 --> 00:19:10.690
+the two pieces of content will be stacked one on top of the other.
+
+255
+00:19:10.690 --> 00:19:15.450
+So the red one will be stacked on top of the sea green colored one.
+
+256
+00:19:15.450 --> 00:19:19.010
+But for small to extra large screens,
+
+257
+00:19:19.010 --> 00:19:22.310
+the two pieces of content will be laid out side by side.
+
+258
+00:19:22.310 --> 00:19:27.490
+The reason for this is because we said column sm five and column sm seven for the two.
+
+259
+00:19:27.490 --> 00:19:31.510
+So for small to extra large they're laid out side by side so
+
+260
+00:19:31.510 --> 00:19:36.210
+that the red content will occupy the leftmost
+
+261
+00:19:36.210 --> 00:19:45.945
+five columns and the sea green content will occupy the right seven columns of your row,
+
+262
+00:19:45.945 --> 00:19:50.440
+all the way from small to extra large screen sizes.
+
+263
+00:19:50.440 --> 00:19:55.605
+So this is how we would specify content layout for different screen sizes.
+
+264
+00:19:55.605 --> 00:20:00.220
+Bootstrap also provides additional classes called as
+
+265
+00:20:00.220 --> 00:20:07.055
+the Order Hyphen Classes which allow you to reorder the content on the screen.
+
+266
+00:20:07.055 --> 00:20:11.440
+So for example, if you apply an order sm first,
+
+267
+00:20:11.440 --> 00:20:15.200
+an order some last class to the divs,
+
+268
+00:20:15.200 --> 00:20:19.265
+as is shown in the example here, in this case,
+
+269
+00:20:19.265 --> 00:20:26.160
+the div for which you apply order sm last will be pushed to
+
+270
+00:20:26.160 --> 00:20:29.390
+the right side of the screen and order
+
+271
+00:20:29.390 --> 00:20:33.125
+sm first div will be pushed to the left side of the screen.
+
+272
+00:20:33.125 --> 00:20:38.570
+So, applying these order classes allows you to reorder the content on the script.
+
+273
+00:20:38.570 --> 00:20:45.000
+Not only this, the order sm also allows you to specify same order sm one to
+
+274
+00:20:45.000 --> 00:20:51.750
+order sm 12 to specify the order in which the content needs to be rendered on the screen.
+
+275
+00:20:51.750 --> 00:20:53.850
+So using a larger number,
+
+276
+00:20:53.850 --> 00:20:57.395
+you could shift the content to the right side of
+
+277
+00:20:57.395 --> 00:21:01.795
+the row and a smaller number will shift the content to the left side of the row.
+
+278
+00:21:01.795 --> 00:21:05.785
+We will see an example of this also in the exercise.
+
+279
+00:21:05.785 --> 00:21:10.850
+The mixed interesting support that Bootstrap Grid brings with the use of
+
+280
+00:21:10.850 --> 00:21:16.195
+the Flexbox layout is vertical alignment of content.
+
+281
+00:21:16.195 --> 00:21:19.530
+The earlier Bootstrap versions,
+
+282
+00:21:19.530 --> 00:21:22.315
+like Bootstrap 3 and earlier,
+
+283
+00:21:22.315 --> 00:21:27.915
+did not have the ability to do vertical alignment of content.
+
+284
+00:21:27.915 --> 00:21:34.870
+With the use of the Flexbox for designing the Bootstrap Grid in Bootstrap four,
+
+285
+00:21:34.870 --> 00:21:41.365
+we get the flexibility that CSS Flexbox brings in terms of doing vertical alignment.
+
+286
+00:21:41.365 --> 00:21:46.295
+So if you wanted the content to be vertically-centered,
+
+287
+00:21:46.295 --> 00:21:48.370
+then to the row,
+
+288
+00:21:48.370 --> 00:21:52.765
+you would apply the class called "align items center".
+
+289
+00:21:52.765 --> 00:21:55.585
+So in this case, whatever content is laid out,
+
+290
+00:21:55.585 --> 00:22:00.750
+will be laid out vertically-aligned within that particular row.
+
+291
+00:22:00.750 --> 00:22:03.560
+So the content which occupies
+
+292
+00:22:03.560 --> 00:22:08.780
+the largest height will be the one to which the remaining ones will be
+
+293
+00:22:08.780 --> 00:22:16.905
+aligned when it is laid out in that row or if you pre-specify the height of the row,
+
+294
+00:22:16.905 --> 00:22:24.935
+then all the content will be centered vertically within that particular row there.
+
+295
+00:22:24.935 --> 00:22:30.795
+Not only that, Bootstrap's Grid also supports horizontal alignment of content.
+
+296
+00:22:30.795 --> 00:22:32.400
+Let's look at an example.
+
+297
+00:22:32.400 --> 00:22:35.060
+So if you specify your content like this.
+
+298
+00:22:35.060 --> 00:22:40.320
+Say, you have three columns and the first one you specify div class column three,
+
+299
+00:22:40.320 --> 00:22:44.140
+then the middle one you'll say div class column auto.
+
+300
+00:22:44.140 --> 00:22:47.010
+I'm going to come back to that column auto in a short while.
+
+301
+00:22:47.010 --> 00:22:50.045
+And the right one says div class column 3.
+
+302
+00:22:50.045 --> 00:22:53.065
+So in this case, what we are specifying is that the left and
+
+303
+00:22:53.065 --> 00:22:58.540
+the rightmost pieces of content will occupy three columns each.
+
+304
+00:22:58.540 --> 00:23:02.120
+The middle one, when I say, "column auto",
+
+305
+00:23:02.120 --> 00:23:07.200
+it means that the number of columns that this particular div
+
+306
+00:23:07.200 --> 00:23:14.090
+occupies will be automatically determined by the content that is enclosed inside there.
+
+307
+00:23:14.090 --> 00:23:16.840
+So based upon the content,
+
+308
+00:23:16.840 --> 00:23:21.710
+the number of columns occupied by the div will automatically adjust itself.
+
+309
+00:23:21.710 --> 00:23:25.070
+In this particular case, in this layout,
+
+310
+00:23:25.070 --> 00:23:31.040
+that particular content is being accommodated within four columns.
+
+311
+00:23:31.040 --> 00:23:34.985
+So now you have four columns being used by the center div,
+
+312
+00:23:34.985 --> 00:23:38.020
+three columns by the left and three columns by the right.
+
+313
+00:23:38.020 --> 00:23:40.650
+So sum total, you have 10 columns.
+
+314
+00:23:40.650 --> 00:23:43.730
+So you have two columns that are left empty.
+
+315
+00:23:43.730 --> 00:23:46.070
+Now, if you specify for the row,
+
+316
+00:23:46.070 --> 00:23:50.165
+you specify justify content center, then,
+
+317
+00:23:50.165 --> 00:23:54.570
+the entire content in this particular row will be centered with
+
+318
+00:23:54.570 --> 00:23:59.365
+respect to the row horizontal.
+
+319
+00:23:59.365 --> 00:24:02.080
+You can also have the content left-justified,
+
+320
+00:24:02.080 --> 00:24:05.584
+right-justified and a couple of other options.
+
+321
+00:24:05.584 --> 00:24:09.260
+Details are in the bootstraps documentation.
+
+322
+00:24:09.260 --> 00:24:13.755
+Bootstrap also allows you to do column offsets.
+
+323
+00:24:13.755 --> 00:24:16.725
+How does this work? Let's look at an example.
+
+324
+00:24:16.725 --> 00:24:18.710
+In this column offset,
+
+325
+00:24:18.710 --> 00:24:21.320
+we can specify a piece of content,
+
+326
+00:24:21.320 --> 00:24:27.750
+add to that if we apply the class as offset hyphen sm hyphen one.
+
+327
+00:24:27.750 --> 00:24:33.585
+What we are specifying is for small to extra large screens,
+
+328
+00:24:33.585 --> 00:24:38.425
+this piece of content should be right-shifted by one column.
+
+329
+00:24:38.425 --> 00:24:41.970
+So when this content is laid out, as you can see,
+
+330
+00:24:41.970 --> 00:24:49.560
+the leftmost one column is left blank and the content is shifted right by one column.
+
+331
+00:24:49.560 --> 00:24:52.925
+And you can layout the remaining content on the right side.
+
+332
+00:24:52.925 --> 00:24:55.860
+So sum total, you can see that the two divs will
+
+333
+00:24:55.860 --> 00:24:59.670
+occupy 11 columns but one column offsetted to the right.
+
+334
+00:24:59.670 --> 00:25:05.910
+So that is how we can control the layout of the content using a column offset.
+
+335
+00:25:05.910 --> 00:25:07.380
+So as you can see,
+
+336
+00:25:07.380 --> 00:25:11.280
+using the column size specifications,
+
+337
+00:25:11.280 --> 00:25:13.540
+the vertical and horizontal alignment,
+
+338
+00:25:13.540 --> 00:25:15.975
+the offset, the push and the pull,
+
+339
+00:25:15.975 --> 00:25:18.635
+and flex first and flex last,
+
+340
+00:25:18.635 --> 00:25:23.925
+we are able to get a lot of control on how we lay out
+
+341
+00:25:23.925 --> 00:25:29.825
+contents for different screen widths and different screen sizes.
+
+342
+00:25:29.825 --> 00:25:36.800
+Bootstrap goes even further by allowing you to nest content inside divs.
+
+343
+00:25:36.800 --> 00:25:39.585
+So for example, if you specify two divs,
+
+344
+00:25:39.585 --> 00:25:43.130
+as you see with column sm five and column sm seven,
+
+345
+00:25:43.130 --> 00:25:45.725
+the two contents will be laid out as seen here.
+
+346
+00:25:45.725 --> 00:25:48.265
+Now, inside the right div,
+
+347
+00:25:48.265 --> 00:25:50.630
+I can again go in and divide
+
+348
+00:25:50.630 --> 00:25:58.080
+that div's width into a row and then that row will automatically give me
+
+349
+00:25:58.080 --> 00:26:04.960
+another 12 columns for that part of the screen and then I can then do the layout using
+
+350
+00:26:04.960 --> 00:26:13.330
+nesting of the divs and do the layout for different parts of that column.
+
+351
+00:26:13.330 --> 00:26:15.595
+So nesting like this,
+
+352
+00:26:15.595 --> 00:26:23.570
+brings you even more flexibility in the way you lay out content in your pitch.
+
+353
+00:26:23.570 --> 00:26:27.910
+With all the discussion about the Bootstrap Grid System and how
+
+354
+00:26:27.910 --> 00:26:34.280
+the Bootstrap Grid supports various ways of laying out content,
+
+355
+00:26:34.280 --> 00:26:39.670
+we're going to now, move on to our next set of exercises.
+
+356
+00:26:39.670 --> 00:26:45.820
+We're going to apply the Bootstrap grid to our index.html page in
+
+357
+00:26:45.820 --> 00:26:52.770
+order to do the layout of the content inside or index.html page.
+
+358
+00:26:52.770 --> 00:26:57.350
+We will also use some custom CSS classes.

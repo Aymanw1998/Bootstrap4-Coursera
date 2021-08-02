@@ -1,0 +1,1145 @@
+WEBVTT
+
+1
+00:00:03.730 --> 00:00:06.755
+In the previous lectures,
+
+2
+00:00:06.755 --> 00:00:12.055
+we have learnt about responsive design and the bootstrap grid system.
+
+3
+00:00:12.055 --> 00:00:18.050
+We have seen how the bootstrap grid allows us to design responsive websites.
+
+4
+00:00:18.050 --> 00:00:21.890
+It's time for us to move onto the next exercise.
+
+5
+00:00:21.890 --> 00:00:27.755
+We'll begin to work with the index html page that we created in
+
+6
+00:00:27.755 --> 00:00:34.945
+our previous exercise and apply the bootstrap grid classes to make it responsive.
+
+7
+00:00:34.945 --> 00:00:40.760
+Taking a quick look at our web page in the browser we see that
+
+8
+00:00:40.760 --> 00:00:46.415
+it is still terrible although the fonts have improved a little bit,
+
+9
+00:00:46.415 --> 00:00:50.645
+and we are now using the bootstraps default fonts.
+
+10
+00:00:50.645 --> 00:01:00.930
+Let's now try and apply the bootstrap grid classes to index.html to improve its layout.
+
+11
+00:01:00.930 --> 00:01:03.805
+Going to the index.html page,
+
+12
+00:01:03.805 --> 00:01:07.960
+let me quickly draw your attention to this particular line in the
+
+13
+00:01:07.960 --> 00:01:12.805
+index.html page that we included already in the previous exercise.
+
+14
+00:01:12.805 --> 00:01:14.660
+I had referred to this line,
+
+15
+00:01:14.660 --> 00:01:17.065
+then we were talking about the bootstrap grid system.
+
+16
+00:01:17.065 --> 00:01:23.895
+So here, we see that we've specified the meta tags with a view port and the content,
+
+17
+00:01:23.895 --> 00:01:26.090
+width as device width,
+
+18
+00:01:26.090 --> 00:01:29.205
+and initial scale one and shrink to fit no.
+
+19
+00:01:29.205 --> 00:01:33.210
+So this meta tag allows us to make
+
+20
+00:01:33.210 --> 00:01:39.225
+our web page responsive by looking at the view port character.
+
+21
+00:01:39.225 --> 00:01:42.630
+Moving ahead to the next step.
+
+22
+00:01:42.630 --> 00:01:49.080
+We're going to roll down to the body of this index.html page,
+
+23
+00:01:49.080 --> 00:01:54.570
+and then look up the first div that comes right below the header tag there,
+
+24
+00:01:54.570 --> 00:02:00.480
+to this div you're going to apply the class container.
+
+25
+00:02:00.480 --> 00:02:05.550
+We have already learnt about the container class in the previous lecture.
+
+26
+00:02:05.550 --> 00:02:09.125
+So once we apply the container class,
+
+27
+00:02:09.125 --> 00:02:12.410
+then taking a look at our web page we see
+
+28
+00:02:12.410 --> 00:02:16.620
+that part of the content right there has already adapted itself.
+
+29
+00:02:16.620 --> 00:02:23.080
+Look at the difference between the content up here and the one below here.
+
+30
+00:02:23.080 --> 00:02:25.370
+Now this content down below here,
+
+31
+00:02:25.370 --> 00:02:30.960
+is in the footer of our index.html page and this content is in the header.
+
+32
+00:02:30.960 --> 00:02:36.890
+But that content on the middle is the actual content of our web page,
+
+33
+00:02:36.890 --> 00:02:40.785
+that is inside the div to which we apply the container.
+
+34
+00:02:40.785 --> 00:02:47.480
+So applying the container class you can immediately see that the width of the page within
+
+35
+00:02:47.480 --> 00:02:50.700
+which our content is laid out has now
+
+36
+00:02:50.700 --> 00:02:54.660
+shrunk and then you have some extra space left on either side,
+
+37
+00:02:54.660 --> 00:02:58.935
+so with this container width being a fixed size container,
+
+38
+00:02:58.935 --> 00:03:02.330
+our content will be fixed to this particular width on
+
+39
+00:03:02.330 --> 00:03:07.425
+the screen leaving enough margin on either side as white space.
+
+40
+00:03:07.425 --> 00:03:13.315
+Let's apply the same container class to both the header and the footer also,
+
+41
+00:03:13.315 --> 00:03:17.355
+and then see how the content changes.
+
+42
+00:03:17.355 --> 00:03:20.200
+Going back to our web page,
+
+43
+00:03:20.200 --> 00:03:24.940
+what I'm going to do now is for the inner content here,
+
+44
+00:03:24.940 --> 00:03:28.165
+the inner div inside the container,
+
+45
+00:03:28.165 --> 00:03:34.110
+I'm going to apply the class as the row class here,
+
+46
+00:03:34.110 --> 00:03:35.885
+to this first one,
+
+47
+00:03:35.885 --> 00:03:38.125
+and I'm going to simply copy this.
+
+48
+00:03:38.125 --> 00:03:44.675
+I'm going to apply the same to the second div here which is lined up for the div,
+
+49
+00:03:44.675 --> 00:03:49.230
+and also scroll down and then to the third div here,
+
+50
+00:03:49.230 --> 00:03:51.375
+I'm also applying the row class here.
+
+51
+00:03:51.375 --> 00:03:56.110
+So now, the content inside this outermost container class,
+
+52
+00:03:56.110 --> 00:03:57.950
+is now divided into three rows,
+
+53
+00:03:57.950 --> 00:04:01.395
+so whatever is inside here will be one row,
+
+54
+00:04:01.395 --> 00:04:02.640
+whatever is inside here,
+
+55
+00:04:02.640 --> 00:04:06.150
+will be the second row and the one in here will be the third row.
+
+56
+00:04:06.150 --> 00:04:10.380
+We'll later on apply the column classes to this.
+
+57
+00:04:10.380 --> 00:04:17.695
+Let us now move to the header in our index.html's body.
+
+58
+00:04:17.695 --> 00:04:23.970
+And to the header, I'm going to apply a class called as jumbotron.
+
+59
+00:04:23.970 --> 00:04:28.265
+The jumbotron component allows you to set
+
+60
+00:04:28.265 --> 00:04:33.805
+apart the content inside the jumbotron from the rest of the page.
+
+61
+00:04:33.805 --> 00:04:39.035
+We will see the result in a short while when we at the resulting web page.
+
+62
+00:04:39.035 --> 00:04:42.215
+Now, to the div inside this header,
+
+63
+00:04:42.215 --> 00:04:46.360
+I'm going to apply the class as container,
+
+64
+00:04:46.360 --> 00:04:49.410
+so that whatever is inside the content will
+
+65
+00:04:49.410 --> 00:04:52.945
+be now constrained by the container width there.
+
+66
+00:04:52.945 --> 00:04:57.670
+Similarly, moving down to the footer here,
+
+67
+00:04:58.780 --> 00:05:01.650
+in the footer also,
+
+68
+00:05:01.650 --> 00:05:04.720
+the first div inside the footer,
+
+69
+00:05:04.720 --> 00:05:09.360
+I'm going to apply the class as container.
+
+70
+00:05:09.360 --> 00:05:13.055
+And the div inside there,
+
+71
+00:05:13.055 --> 00:05:16.755
+I'm going to apply the class as row there,
+
+72
+00:05:16.755 --> 00:05:19.735
+to the div inside there.
+
+73
+00:05:19.735 --> 00:05:25.225
+So this div will take us all the way to this particular div here.
+
+74
+00:05:25.225 --> 00:05:29.105
+And then the next div also that is right below that,
+
+75
+00:05:29.105 --> 00:05:31.820
+I will apply the class as row.
+
+76
+00:05:31.820 --> 00:05:35.380
+So now my footer contains two rows here,
+
+77
+00:05:35.380 --> 00:05:38.520
+we'll style the content using column,
+
+78
+00:05:38.520 --> 00:05:40.110
+classes in a short while.
+
+79
+00:05:40.110 --> 00:05:42.365
+Going to the header also,
+
+80
+00:05:42.365 --> 00:05:51.500
+I will apply the row class to the second div inside the container div here.
+
+81
+00:05:51.500 --> 00:05:54.920
+So this div which matches I've got this,
+
+82
+00:05:54.920 --> 00:05:58.605
+will be one single row in the header.
+
+83
+00:05:58.605 --> 00:06:02.400
+Let's take a look at our resulting web page.
+
+84
+00:06:02.400 --> 00:06:04.365
+Going to our web page,
+
+85
+00:06:04.365 --> 00:06:09.300
+you can now see that the header content is now set apart from
+
+86
+00:06:09.300 --> 00:06:14.935
+the rest inside this grey box on top here.
+
+87
+00:06:14.935 --> 00:06:22.735
+But the content itself is now lined up with the content down below here.
+
+88
+00:06:22.735 --> 00:06:25.685
+Now, this is the result of using the container.
+
+89
+00:06:25.685 --> 00:06:27.550
+Moving to the footer,
+
+90
+00:06:27.550 --> 00:06:32.635
+you can now see that the footer content is also now lined up inside the container.
+
+91
+00:06:32.635 --> 00:06:36.800
+But the page still looks not that great,
+
+92
+00:06:36.800 --> 00:06:44.705
+we'll now apply the column classes to the inner divs now.
+
+93
+00:06:44.705 --> 00:06:48.665
+Going back to the index.html page,
+
+94
+00:06:48.665 --> 00:06:51.865
+we'll now start applying the column classes.
+
+95
+00:06:51.865 --> 00:06:58.365
+So going to the header, to the second inner div inside the jumbotron here,
+
+96
+00:06:58.365 --> 00:07:06.230
+let me apply a class as column 12, column sm-6.
+
+97
+00:07:06.230 --> 00:07:09.960
+So, here the content in
+
+98
+00:07:09.960 --> 00:07:15.525
+this first div will occupy the entire row for extra small screen sizes,
+
+99
+00:07:15.525 --> 00:07:18.770
+and then will occupy half the row so that's why column
+
+100
+00:07:18.770 --> 00:07:24.235
+sm-6 for small to extra large screen sizes.
+
+101
+00:07:24.235 --> 00:07:26.480
+Now, similarly for the second div here,
+
+102
+00:07:26.480 --> 00:07:28.715
+although it doesn't contain any content there,
+
+103
+00:07:28.715 --> 00:07:37.840
+I'm going to define the column classes here as column 12 and then column sm.
+
+104
+00:07:37.840 --> 00:07:40.990
+So, notice that here by specifying column 12,
+
+105
+00:07:40.990 --> 00:07:45.270
+I'm explicitly stating that for extra small screen sizes whatever content is
+
+106
+00:07:45.270 --> 00:07:49.860
+inside this div will be stacked below the content about here.
+
+107
+00:07:49.860 --> 00:07:54.150
+And then for small to extra large screen sizes,
+
+108
+00:07:54.150 --> 00:07:59.270
+this content will occupy the leftover amount of
+
+109
+00:07:59.270 --> 00:08:04.925
+columns in the row for small to extra large screen sizes.
+
+110
+00:08:04.925 --> 00:08:09.255
+So here in this case since six columns are occupied by this content,
+
+111
+00:08:09.255 --> 00:08:12.745
+this will get the remaining six columns there.
+
+112
+00:08:12.745 --> 00:08:18.030
+Moving down to the content rows here,
+
+113
+00:08:18.030 --> 00:08:20.110
+for the content here,
+
+114
+00:08:20.110 --> 00:08:22.860
+so for this first content,
+
+115
+00:08:22.860 --> 00:08:24.590
+which is a label here,
+
+116
+00:08:24.590 --> 00:08:29.240
+I'm going to apply the classes as column 12,
+
+117
+00:08:29.240 --> 00:08:34.985
+column sm-4, column md-3.
+
+118
+00:08:34.985 --> 00:08:39.770
+So, stating that for extra small screen sizes,
+
+119
+00:08:39.770 --> 00:08:42.650
+this will occupy the entire row, for small,
+
+120
+00:08:42.650 --> 00:08:44.160
+it will occupy full columns,
+
+121
+00:08:44.160 --> 00:08:46.585
+and then for medium to extra large,
+
+122
+00:08:46.585 --> 00:08:50.395
+it will occupy three columns in the row.
+
+123
+00:08:50.395 --> 00:08:56.810
+Now, so the remaining part will be occupied by the content down below here,
+
+124
+00:08:56.810 --> 00:09:00.575
+so to that, I will apply the classes as col,
+
+125
+00:09:00.575 --> 00:09:05.715
+indicating that this will be stacked below
+
+126
+00:09:05.715 --> 00:09:11.025
+the content here in the extra small screen sizes,
+
+127
+00:09:11.025 --> 00:09:12.690
+and then I'll say column sm,
+
+128
+00:09:12.690 --> 00:09:16.940
+so which means that this will occupy the remaining eight columns here,
+
+129
+00:09:16.940 --> 00:09:19.300
+because four columns is taken up by this one,
+
+130
+00:09:19.300 --> 00:09:22.360
+and then we'll say column md,
+
+131
+00:09:22.360 --> 00:09:24.320
+so which means that this will occupy
+
+132
+00:09:24.320 --> 00:09:27.300
+the remaining nine columns because three columns are taken
+
+133
+00:09:27.300 --> 00:09:33.230
+up for medium to extra large screen sizes by the content above here.
+
+134
+00:09:33.230 --> 00:09:37.810
+Now that I have defined for the first content row,
+
+135
+00:09:37.810 --> 00:09:43.070
+I'm going to take the same column class application here,
+
+136
+00:09:43.070 --> 00:09:49.415
+and then apply that to the second row here,
+
+137
+00:09:49.415 --> 00:09:52.345
+and also the third content row here.
+
+138
+00:09:52.345 --> 00:09:57.240
+Similarly, I'm going to copy this one and then apply the same to
+
+139
+00:09:57.240 --> 00:10:04.690
+the content divs down below here.
+
+140
+00:10:04.690 --> 00:10:11.950
+So now we have configured both the header and the content columns there.
+
+141
+00:10:11.950 --> 00:10:14.690
+Let's now move down to the footer.
+
+142
+00:10:14.690 --> 00:10:21.260
+In the footer, you'll notice that this div contains three inner divs here,
+
+143
+00:10:21.260 --> 00:10:23.720
+so for each of these three inner divs here,
+
+144
+00:10:23.720 --> 00:10:26.570
+I'm going to apply the corresponding column classes.
+
+145
+00:10:26.570 --> 00:10:27.680
+So for the first one,
+
+146
+00:10:27.680 --> 00:10:35.280
+which contains links to the various pages that will form part of this website,
+
+147
+00:10:35.280 --> 00:10:38.395
+I'm going to apply a column class,
+
+148
+00:10:38.395 --> 00:10:46.045
+as column four, column sm-2 here.
+
+149
+00:10:46.045 --> 00:10:50.840
+So meaning that for extra small screen sizes,
+
+150
+00:10:50.840 --> 00:10:55.320
+this will occupy four columns and for small to extra large,
+
+151
+00:10:55.320 --> 00:10:58.660
+it will occupy just two columns here.
+
+152
+00:10:59.040 --> 00:11:01.790
+Then for the second one,
+
+153
+00:11:01.790 --> 00:11:08.425
+the second div in there I will apply the classes as column seven.
+
+154
+00:11:08.425 --> 00:11:12.050
+So notice that I have four here and then seven here,
+
+155
+00:11:12.050 --> 00:11:14.755
+so that total occupies 11 columns.
+
+156
+00:11:14.755 --> 00:11:16.430
+I have left one column empty.
+
+157
+00:11:16.430 --> 00:11:21.520
+I'll come back later to apply an offset to take care of the extra column.
+
+158
+00:11:21.520 --> 00:11:23.400
+So this is column seven,
+
+159
+00:11:23.400 --> 00:11:31.345
+and then col-sm-5 to the second one.
+
+160
+00:11:31.345 --> 00:11:33.630
+So this is two plus five, seven.
+
+161
+00:11:33.630 --> 00:11:36.390
+So I still have five columns left over,
+
+162
+00:11:36.390 --> 00:11:40.685
+which I can use for the third div here.
+
+163
+00:11:40.685 --> 00:11:44.610
+Now for extra small screen sizes,
+
+164
+00:11:44.610 --> 00:11:47.700
+these two contents will be positioned side by side,
+
+165
+00:11:47.700 --> 00:11:52.080
+and then this div which contains links to
+
+166
+00:11:52.080 --> 00:11:58.585
+a social media site will be in a separate row stacked below.
+
+167
+00:11:58.585 --> 00:12:04.390
+But for small to extra large screen sizes,
+
+168
+00:12:04.390 --> 00:12:07.680
+the first one will occupy two columns,
+
+169
+00:12:07.680 --> 00:12:10.240
+the second will occupy five and the remaining will be
+
+170
+00:12:10.240 --> 00:12:13.545
+taken up by social media links here.
+
+171
+00:12:13.545 --> 00:12:15.230
+So for the third one,
+
+172
+00:12:15.230 --> 00:12:18.650
+I'm going to apply the class
+
+173
+00:12:18.650 --> 00:12:26.515
+as col-12 col-sm-4 here.
+
+174
+00:12:26.515 --> 00:12:32.625
+So col-12 col-sm-4, meaning that this will occupy
+
+175
+00:12:32.625 --> 00:12:37.090
+a separate set of 12 columns
+
+176
+00:12:37.090 --> 00:12:42.310
+stacked below the previous content for extra small screen sizes,
+
+177
+00:12:42.310 --> 00:12:45.040
+but for small to extra large it will occupy four columns.
+
+178
+00:12:45.040 --> 00:12:46.815
+So here we are four plus five,
+
+179
+00:12:46.815 --> 00:12:48.430
+nine plus two 11.
+
+180
+00:12:48.430 --> 00:12:52.635
+So one column is still leftover for small to extra large.
+
+181
+00:12:52.635 --> 00:12:57.510
+So that's how I'm going to apply that column closest to this.
+
+182
+00:12:57.510 --> 00:13:03.250
+Now, we still have the one below here where we contain the copyrights to this.
+
+183
+00:13:03.250 --> 00:13:08.745
+I'm going to apply the class as column auto,
+
+184
+00:13:08.745 --> 00:13:12.050
+meaning that this content will occupy
+
+185
+00:13:12.050 --> 00:13:15.515
+just enough columns as is required by the content there.
+
+186
+00:13:15.515 --> 00:13:20.405
+Later on you will see that I will position this content in the center of
+
+187
+00:13:20.405 --> 00:13:26.385
+the screen thereby using yet another bootstrap CSS class.
+
+188
+00:13:26.385 --> 00:13:29.035
+We'll come to that in the next exercise.
+
+189
+00:13:29.035 --> 00:13:33.405
+So with this we have applied various column classes to the header,
+
+190
+00:13:33.405 --> 00:13:35.880
+the content, and the footer.
+
+191
+00:13:35.880 --> 00:13:39.280
+This is a good time for us to save the changes and then go and take
+
+192
+00:13:39.280 --> 00:13:43.475
+a look at the updated indexed or HTML page.
+
+193
+00:13:43.475 --> 00:13:46.690
+Taking a look at our index.html page,
+
+194
+00:13:46.690 --> 00:13:51.315
+you'll notice how in the header which is the Jumbotron,
+
+195
+00:13:51.315 --> 00:13:55.145
+the content is now occupying just half of the screen there.
+
+196
+00:13:55.145 --> 00:14:00.210
+The other half of the screen of this particular row is now left empty.
+
+197
+00:14:00.210 --> 00:14:03.180
+Coming down to the content rows,
+
+198
+00:14:03.180 --> 00:14:07.685
+you see that the label on the left side occupying
+
+199
+00:14:07.685 --> 00:14:14.280
+three or four columns depending upon which screen size were using,
+
+200
+00:14:14.280 --> 00:14:18.250
+and the remaining being occupied by the rest of the content.
+
+201
+00:14:18.250 --> 00:14:19.780
+So here we have one row,
+
+202
+00:14:19.780 --> 00:14:21.770
+the second row, and the third row.
+
+203
+00:14:21.770 --> 00:14:26.330
+And then the footer here you can see that the links are on the left side,
+
+204
+00:14:26.330 --> 00:14:28.065
+the others in the middle,
+
+205
+00:14:28.065 --> 00:14:31.150
+and then the social media links on the right side.
+
+206
+00:14:31.150 --> 00:14:35.460
+So this is for a medium sized screen.
+
+207
+00:14:35.460 --> 00:14:42.765
+Now if you want to look at the same view for an extra small or small screen sizes,
+
+208
+00:14:42.765 --> 00:14:45.045
+if you're using Chrome,
+
+209
+00:14:45.045 --> 00:14:47.960
+then Chrome has the developer tools that you can
+
+210
+00:14:47.960 --> 00:14:51.010
+turn on by clicking on the view developer tools,
+
+211
+00:14:51.010 --> 00:14:53.105
+and when the developer tools come up,
+
+212
+00:14:53.105 --> 00:14:56.890
+you will notice, let me reduce the size here.
+
+213
+00:14:56.890 --> 00:15:00.930
+You will notice this small to windows there.
+
+214
+00:15:00.930 --> 00:15:06.500
+So clicking on that will turn on the responsive view for these sites there.
+
+215
+00:15:06.500 --> 00:15:15.680
+So you can see that in here the view of this same web page on a pixel to site,
+
+216
+00:15:15.680 --> 00:15:19.300
+which is 411 by 731 in portrait mode,
+
+217
+00:15:19.300 --> 00:15:22.805
+so which is corresponding to an extra small screen size,
+
+218
+00:15:22.805 --> 00:15:25.300
+so you can see how the content is laid out.
+
+219
+00:15:25.300 --> 00:15:28.145
+So you can see the Jumbotron content there
+
+220
+00:15:28.145 --> 00:15:31.745
+and then the remaining part of the content down below here.
+
+221
+00:15:31.745 --> 00:15:34.585
+And then down to the footer.
+
+222
+00:15:34.585 --> 00:15:40.500
+So in the footer you can see how the links and ad does have laid out side by side.
+
+223
+00:15:40.500 --> 00:15:45.880
+Now reducing the screen size so that we can see how that footer is laid out here.
+
+224
+00:15:45.880 --> 00:15:48.735
+So the remaining part, you have the links on the left side,
+
+225
+00:15:48.735 --> 00:15:51.470
+you have the address on the right side,
+
+226
+00:15:51.470 --> 00:15:56.515
+and then the social media links down below in a separate row here,
+
+227
+00:15:56.515 --> 00:15:59.775
+and then the copyright at the bottom there.
+
+228
+00:15:59.775 --> 00:16:04.935
+So this is the interesting view that we see for extra small screen sizes.
+
+229
+00:16:04.935 --> 00:16:07.450
+Getting back to our code here,
+
+230
+00:16:07.450 --> 00:16:11.710
+I'm going to now apply the order and offset classes to
+
+231
+00:16:11.710 --> 00:16:17.255
+this content in order to display the content in a slightly different manner.
+
+232
+00:16:17.255 --> 00:16:21.850
+So going to the content row here,
+
+233
+00:16:21.850 --> 00:16:27.820
+for the two divs here which contain the content,
+
+234
+00:16:27.820 --> 00:16:32.020
+I'm going to apply the classes as
+
+235
+00:16:32.020 --> 00:16:40.150
+order-sm-last for the first row here.
+
+236
+00:16:40.150 --> 00:16:50.120
+And then for that one down below here I will apply order sm first to the row down here.
+
+237
+00:16:50.120 --> 00:16:53.300
+So which means that when this content is displayed,
+
+238
+00:16:53.300 --> 00:16:56.090
+this content will be pulled to the left side of the screen and then
+
+239
+00:16:56.090 --> 00:16:58.880
+this column will be pushed to the right side of the screen.
+
+240
+00:16:58.880 --> 00:17:02.400
+So this will be ordered to the right side and this will be ordered to the left side.
+
+241
+00:17:02.400 --> 00:17:08.075
+As I explained about the order clauses in the previous lecture.
+
+242
+00:17:08.075 --> 00:17:09.880
+Similarly from the second row,
+
+243
+00:17:09.880 --> 00:17:13.330
+I'm going to leave it as such but from the third row I'm going to apply
+
+244
+00:17:13.330 --> 00:17:17.240
+the same set of order classes.
+
+245
+00:17:17.240 --> 00:17:20.290
+So I'm going to go to the third row here,
+
+246
+00:17:20.290 --> 00:17:25.425
+and then apply the order-sm-last to this one,
+
+247
+00:17:25.425 --> 00:17:30.850
+and then I will apply the order-sm-first to this one.
+
+248
+00:17:31.460 --> 00:17:36.450
+And so this one again will be reordered
+
+249
+00:17:36.450 --> 00:17:38.300
+such that this content will appear to
+
+250
+00:17:38.300 --> 00:17:40.870
+the left side and this content will appear to the right side.
+
+251
+00:17:40.870 --> 00:17:46.640
+This is just a way of positioning the content in a bit more interesting way.
+
+252
+00:17:46.640 --> 00:17:50.210
+Now moving down into the footer here,
+
+253
+00:17:50.210 --> 00:17:54.690
+now I'm going to apply an offset class here.
+
+254
+00:17:54.690 --> 00:18:00.440
+So notice that I have mentioned that these two columns will occupy four plus seven, 11.
+
+255
+00:18:00.440 --> 00:18:02.130
+So one column is leftover.
+
+256
+00:18:02.130 --> 00:18:07.295
+So I'm going to apply an offset-1 class to this one.
+
+257
+00:18:07.295 --> 00:18:12.320
+So which means that this content on this div will be pushed right by one column here.
+
+258
+00:18:12.320 --> 00:18:14.710
+Similarly since I said offset one,
+
+259
+00:18:14.710 --> 00:18:23.145
+this will be applied to extra small all the way up to the extra large screen sizes.
+
+260
+00:18:23.145 --> 00:18:28.235
+And so that is the use of the offset class.
+
+261
+00:18:28.235 --> 00:18:30.060
+So now that we have made the changes,
+
+262
+00:18:30.060 --> 00:18:36.285
+let's save the changes and then go and take a look at our web page in the browser.
+
+263
+00:18:36.285 --> 00:18:38.430
+Going back to that browser,
+
+264
+00:18:38.430 --> 00:18:43.715
+you now see how the header is as before,
+
+265
+00:18:43.715 --> 00:18:46.850
+but in the first content row,
+
+266
+00:18:46.850 --> 00:18:49.090
+you see that this content has been pushed to
+
+267
+00:18:49.090 --> 00:18:51.925
+the left side and the label to the right side.
+
+268
+00:18:51.925 --> 00:18:56.090
+The second row is different has being maintained just as before.
+
+269
+00:18:56.090 --> 00:18:58.330
+But for the third you'll see that this has been
+
+270
+00:18:58.330 --> 00:19:00.780
+pushed to the right and this has been pushed to the left.
+
+271
+00:19:00.780 --> 00:19:06.900
+So that is the use of the order-sm-last and order-sm-first class is there.
+
+272
+00:19:06.900 --> 00:19:08.530
+Now going to the footer,
+
+273
+00:19:08.530 --> 00:19:18.195
+you now see that the content in the first div here has been pushed right by one column,.
+
+274
+00:19:18.195 --> 00:19:21.560
+So you can see that there is one column of whitespace here,
+
+275
+00:19:21.560 --> 00:19:27.790
+and this isn't pushed right and the remaining ones have been formatted accordingly.
+
+276
+00:19:27.790 --> 00:19:32.235
+So with this we complete the changes
+
+277
+00:19:32.235 --> 00:19:37.790
+to our index.html page or additional page for this particular exercise.
+
+278
+00:19:37.790 --> 00:19:41.665
+With this we complete this particular exercise.
+
+279
+00:19:41.665 --> 00:19:46.235
+In this exercise we looked at the use of the container, row,
+
+280
+00:19:46.235 --> 00:19:53.800
+and column classes in order to design our web page a little bit nicer.
+
+281
+00:19:53.800 --> 00:19:57.705
+In the second part of the exercise which will follow this,
+
+282
+00:19:57.705 --> 00:20:04.680
+we're going to add more to try and improve the way these web pages are rendered.
+
+283
+00:20:04.680 --> 00:20:08.375
+It is still not to my satisfaction.
+
+284
+00:20:08.375 --> 00:20:12.920
+Obviously, there is still room for improvement.
+
+285
+00:20:12.920 --> 00:20:16.290
+This may be a good time for you to do a git comment with
+
+286
+00:20:16.290 --> 00:20:21.470
+the message Bootstrap Grid Part One.

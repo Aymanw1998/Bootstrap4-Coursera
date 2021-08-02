@@ -1,0 +1,17 @@
+{
+  "name": "confusion",
+  "version": "1.0.0",
+  "description": "Assignment 1",
+  "main": "aboutus.html",
+  "scripts": {
+    "start": "npm run lite",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "lite": "lite-server"
+  },
+  "author": "Ayman Wahbani",
+  "license": "ISC",
+  "devDependencies": {
+    "bootstrap": "^5.0.2",
+    "lite-server": "^2.6.1"
+  }
+}
