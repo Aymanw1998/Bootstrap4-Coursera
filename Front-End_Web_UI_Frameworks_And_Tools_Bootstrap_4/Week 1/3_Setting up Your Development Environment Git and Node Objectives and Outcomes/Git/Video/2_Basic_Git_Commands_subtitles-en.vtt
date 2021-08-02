@@ -1,0 +1,1085 @@
+WEBVTT
+
+1
+00:00:00.000 --> 00:00:04.402
+[MUSIC]
+
+2
+00:00:04.402 --> 00:00:08.751
+Let us now explore some basic Git
+commands that are very useful for
+
+3
+00:00:08.751 --> 00:00:10.660
+us in this specialization.
+
+4
+00:00:11.670 --> 00:00:15.299
+There is lot more to Git than
+what we cover in this exercise.
+
+5
+00:00:18.380 --> 00:00:23.779
+To get started go to your convenient
+location on your computer and
+
+6
+00:00:23.779 --> 00:00:27.029
+then create a folder named git-test.
+
+7
+00:00:30.340 --> 00:00:35.090
+Then, open this folder
+in your favorite editor.
+
+8
+00:00:37.935 --> 00:00:42.875
+Here, I have the GIT-TEST folder
+that we just created open in
+
+9
+00:00:42.875 --> 00:00:45.390
+my Visual Studio Code.
+
+10
+00:00:45.390 --> 00:00:51.399
+Let me add a file to this
+folder named index.html,
+
+11
+00:00:51.399 --> 00:00:55.869
+now you can see that I have added in some
+
+12
+00:00:55.869 --> 00:01:00.504
+HTML code into this index.html file.
+
+13
+00:01:00.504 --> 00:01:02.580
+Let's save the changes.
+
+14
+00:01:02.580 --> 00:01:05.240
+Now let's switch to our command line,
+
+15
+00:01:06.740 --> 00:01:11.320
+at the command line go to
+the git-test folder, and
+
+16
+00:01:11.320 --> 00:01:15.860
+let's initialize this folder
+to be a git repository.
+
+17
+00:01:15.860 --> 00:01:19.800
+So to do that at the command
+line type git init.
+
+18
+00:01:21.620 --> 00:01:26.020
+Now, this folder has been
+initialized to be a git repository.
+
+19
+00:01:27.120 --> 00:01:32.650
+So this is our first git command
+that we have learnt, git init.
+
+20
+00:01:32.650 --> 00:01:36.320
+This initializes the current
+folder as a git repository and
+
+21
+00:01:36.320 --> 00:01:42.380
+when it initializes the folder,
+it will mark that folder as a master.
+
+22
+00:01:42.380 --> 00:01:45.690
+This is the master branch for my kit.
+
+23
+00:01:45.690 --> 00:01:48.210
+Now let's not worry about branches and
+so on,
+
+24
+00:01:48.210 --> 00:01:50.665
+we will not deal with that in this course.
+
+25
+00:01:50.665 --> 00:01:56.240
+We will only be working with the master
+branch, in this particular specialization.
+
+26
+00:01:56.240 --> 00:01:58.500
+So this would be marked as a master.
+
+27
+00:01:58.500 --> 00:02:02.060
+Now this is the initial
+point of our repository.
+
+28
+00:02:03.770 --> 00:02:08.410
+The next command that we're
+going to look at is git status.
+
+29
+00:02:08.410 --> 00:02:10.510
+If you type git status
+in the command line,
+
+30
+00:02:10.510 --> 00:02:13.740
+it'll tell you the current
+status of the folder.
+
+31
+00:02:13.740 --> 00:02:17.460
+So let's do that at the command line and
+see what it shows.
+
+32
+00:02:19.470 --> 00:02:23.395
+At the command line, type git status and
+
+33
+00:02:23.395 --> 00:02:28.945
+read the information that is
+tapped out on the command window.
+
+34
+00:02:28.945 --> 00:02:34.390
+You see that it says on branch master, so
+that is the master branch that we add on.
+
+35
+00:02:34.390 --> 00:02:40.690
+And it says, untracked files,
+and then shows index.html in red.
+
+36
+00:02:40.690 --> 00:02:43.790
+On your specific computer,
+it may be using different colors or
+
+37
+00:02:43.790 --> 00:02:49.040
+represent this differently or
+this is what it shows on my Mac.
+
+38
+00:02:49.040 --> 00:02:54.040
+So now, this index.html file that
+we have just created in this folder
+
+39
+00:02:54.040 --> 00:02:58.100
+is now not been added
+to our git repository.
+
+40
+00:02:58.100 --> 00:03:01.680
+So let's go ahead and
+add that file to the git repository.
+
+41
+00:03:01.680 --> 00:03:07.510
+So to do that, we say, git add,
+and you can simply say dot,
+
+42
+00:03:07.510 --> 00:03:12.350
+which means that all the files in
+the current directory will be added to
+
+43
+00:03:12.350 --> 00:03:17.680
+what is called as the staging
+area of my git repository.
+
+44
+00:03:17.680 --> 00:03:21.740
+So now, if I again type git status,
+
+45
+00:03:21.740 --> 00:03:27.780
+you will see that the file
+index.html is marked in green.
+
+46
+00:03:27.780 --> 00:03:34.202
+And it says, changes to be committed there
+and then shows the file name and then so
+
+47
+00:03:34.202 --> 00:03:40.161
+that means that this file is now ready
+to be committed to my git repository.
+
+48
+00:03:41.647 --> 00:03:46.100
+So, the next command
+that we saw was git add.
+
+49
+00:03:46.100 --> 00:03:51.190
+By using git add you can add file or
+folders to that staging area.
+
+50
+00:03:51.190 --> 00:03:57.250
+So once you add it to the staging area,
+then you can commit that snapshot
+
+51
+00:03:57.250 --> 00:04:03.100
+of our folder status
+to our git repository.
+
+52
+00:04:03.100 --> 00:04:06.460
+So that means that when
+you do the git commit,
+
+53
+00:04:08.130 --> 00:04:12.610
+what this command will
+do is commit the current
+
+54
+00:04:12.610 --> 00:04:17.250
+state of our folders into
+our git repositories.
+
+55
+00:04:17.250 --> 00:04:20.380
+So all the files as they
+exist at the moment,
+
+56
+00:04:20.380 --> 00:04:24.720
+once they have been staged using the git
+add, then they will be committed to our
+
+57
+00:04:24.720 --> 00:04:29.510
+git repository when we execute
+the git command folder.
+
+58
+00:04:29.510 --> 00:04:34.650
+So at this point when we execute
+the git command, then our initial
+
+59
+00:04:34.650 --> 00:04:40.750
+state will now be changed to the first
+commit to the git repository.
+
+60
+00:04:40.750 --> 00:04:42.650
+So let's go ahead and do that.
+
+61
+00:04:45.470 --> 00:04:51.950
+Back at the command prompt,
+let's type git commit.
+
+62
+00:04:51.950 --> 00:04:54.888
+And then we can even add
+a message to our commit.
+
+63
+00:04:54.888 --> 00:05:00.010
+So I'm going to say git commit -m "first
+
+64
+00:05:00.010 --> 00:05:04.160
+commit" because this is our
+commit to our git repository.
+
+65
+00:05:04.160 --> 00:05:10.630
+So when I do that, it says, okay, 1 file
+has been added to the git repository and
+
+66
+00:05:10.630 --> 00:05:15.300
+some other information will be
+typed out on to the command window.
+
+67
+00:05:15.300 --> 00:05:20.790
+So let's now check again, git status and
+
+68
+00:05:20.790 --> 00:05:26.220
+now you see that it says nothing to
+commit, working directory is clean.
+
+69
+00:05:26.220 --> 00:05:31.230
+So what it means is that the current
+state of my working directory or
+
+70
+00:05:31.230 --> 00:05:36.390
+working folder has been committed
+to the git repository, so
+
+71
+00:05:36.390 --> 00:05:39.330
+a snapshot has been committed
+to my git repository.
+
+72
+00:05:39.330 --> 00:05:47.200
+Now, I can type the next command
+called git log --oneline,
+
+73
+00:05:47.200 --> 00:05:53.020
+and see that it shows a number there,
+an eight digit number there,
+
+74
+00:05:53.020 --> 00:05:57.850
+and then also it shows the message that we
+put into our commit saying first commit.
+
+75
+00:05:57.850 --> 00:06:03.340
+So that is the log of all the commits that
+have been put into my git repository.
+
+76
+00:06:05.120 --> 00:06:08.900
+So, going back to our next git command,
+
+77
+00:06:08.900 --> 00:06:14.094
+we saw that git log --oneline
+
+78
+00:06:14.094 --> 00:06:18.540
+will show us a brief
+log of all the commits.
+
+79
+00:06:18.540 --> 00:06:20.080
+If you simply type git log
+
+80
+00:06:21.200 --> 00:06:26.220
+display a lot more detailed
+information about all the commits.
+
+81
+00:06:26.220 --> 00:06:31.344
+But this is sufficient enough for
+obtaining information that we require.
+
+82
+00:06:33.350 --> 00:06:40.248
+Let's now come back to our editor here,
+in Visual Studio Code,
+
+83
+00:06:40.248 --> 00:06:46.141
+so I'm going to add more
+changes to my index.html file.
+
+84
+00:06:54.501 --> 00:06:57.790
+I have changed my index.html file.
+
+85
+00:06:57.790 --> 00:07:02.450
+Now, let me add another folder
+under the git test folder, so
+
+86
+00:07:02.450 --> 00:07:07.990
+I will create a subfolder here
+named templates, and inside these
+
+87
+00:07:07.990 --> 00:07:13.450
+templates folder, I'm going to
+create another file name, test.html.
+
+88
+00:07:13.450 --> 00:07:16.230
+This is just to show you how git
+
+89
+00:07:16.230 --> 00:07:21.120
+can commit entire folder
+hierarchy into its repository.
+
+90
+00:07:21.120 --> 00:07:26.002
+So with test.html now there, I'm just
+
+91
+00:07:26.002 --> 00:07:31.173
+going to copy everything
+from my index.html
+
+92
+00:07:31.173 --> 00:07:36.499
+into my test.html, and save the changes.
+
+93
+00:07:39.447 --> 00:07:41.484
+Going back to the command line,
+
+94
+00:07:41.484 --> 00:07:46.480
+let's now check out the status of
+our git repository and this folder.
+
+95
+00:07:46.480 --> 00:07:51.740
+So type in git status, shows that
+
+96
+00:07:51.740 --> 00:07:56.020
+the index status html file that we have
+already handed earlier to the repository
+
+97
+00:07:56.020 --> 00:08:00.570
+has now been modified, so there is
+a newer version of the index.html file.
+
+98
+00:08:00.570 --> 00:08:03.220
+Also, it shows that
+there are some untracked
+
+99
+00:08:03.220 --> 00:08:05.530
+files in this folder called templates.
+
+100
+00:08:06.620 --> 00:08:11.794
+Let's add all these changes to the staging
+
+101
+00:08:11.794 --> 00:08:16.114
+the area, so again, type git add.
+
+102
+00:08:16.114 --> 00:08:21.620
+And then all these files will
+be added to the staging area.
+
+103
+00:08:21.620 --> 00:08:23.940
+Again, checking out the status.
+
+104
+00:08:23.940 --> 00:08:29.490
+You now see that changes that have
+been added to the staging area.
+
+105
+00:08:29.490 --> 00:08:32.850
+So all these files have been
+added to the staging area.
+
+106
+00:08:32.850 --> 00:08:36.850
+Let's do one more commit, so
+
+107
+00:08:36.850 --> 00:08:42.930
+I would say git commit -m,
+second commit and
+
+108
+00:08:42.930 --> 00:08:47.096
+then let's check out the log.
+
+109
+00:08:50.874 --> 00:08:55.246
+If you check out the log,
+you'll now see that there are two commits
+
+110
+00:08:55.246 --> 00:08:58.930
+in my git repository,
+the first and the second commit.
+
+111
+00:08:58.930 --> 00:09:03.040
+And note that each one of them is
+given a different number there.
+
+112
+00:09:03.040 --> 00:09:07.130
+If you want to see their
+full details of the log,
+
+113
+00:09:07.130 --> 00:09:12.510
+you can type simply, git log and
+then you'll receive more details in there.
+
+114
+00:09:12.510 --> 00:09:15.132
+Then what you would be interested in.
+
+115
+00:09:15.132 --> 00:09:20.114
+So, notice that the oneline
+commit only gives the first
+
+116
+00:09:20.114 --> 00:09:24.405
+few characters of my commit number there.
+
+117
+00:09:24.405 --> 00:09:27.028
+That is sufficient enough for
+us to operate with.
+
+118
+00:09:29.245 --> 00:09:34.721
+Let me now go back again to my
+Visual Studio, and then add one more.
+
+119
+00:09:43.885 --> 00:09:47.140
+One more line to my index.html file.
+
+120
+00:09:47.140 --> 00:09:49.800
+So now my index.html
+file has been modified.
+
+121
+00:09:51.660 --> 00:09:53.170
+And let's save the changes.
+
+122
+00:09:55.310 --> 00:09:58.530
+Going back to the command line, doing git
+
+123
+00:09:59.870 --> 00:10:04.490
+status shows that index.html
+file has been modified.
+
+124
+00:10:04.490 --> 00:10:10.650
+So let's add this to the staging area,
+and then do a third commit.
+
+125
+00:10:10.650 --> 00:10:15.716
+So let's say, git add.,
+
+126
+00:10:15.716 --> 00:10:18.720
+git status,
+
+127
+00:10:18.720 --> 00:10:22.700
+now you see that the index.html
+the modified version has been added.
+
+128
+00:10:22.700 --> 00:10:27.722
+Now we can say git commit.
+
+129
+00:10:31.231 --> 00:10:36.825
+"third commit" and do git log --oneline,
+
+130
+00:10:36.825 --> 00:10:43.810
+and you see there are three
+commits in our repository.
+
+131
+00:10:43.810 --> 00:10:48.220
+So now our repository contains
+snapshots of three different points,
+
+132
+00:10:48.220 --> 00:10:51.370
+at the end of the first commit,
+at the end of the second commit, and
+
+133
+00:10:51.370 --> 00:10:53.250
+at the end of the third commit.
+
+134
+00:10:53.250 --> 00:10:56.930
+Now, we also can roll back changes,
+
+135
+00:10:56.930 --> 00:11:01.590
+we can revert the repository
+to a previous version.
+
+136
+00:11:01.590 --> 00:11:04.780
+We can pull out a file
+from an older commit, and
+
+137
+00:11:04.780 --> 00:11:09.180
+then replace the existing
+directory from the old commit.
+
+138
+00:11:09.180 --> 00:11:12.370
+So, let's see how we can
+operate with these things
+
+139
+00:11:12.370 --> 00:11:14.120
+by learning a couple of more commands.
+
+140
+00:11:15.820 --> 00:11:21.450
+At this stage, our index.html
+file is in the current state.
+
+141
+00:11:21.450 --> 00:11:24.795
+So you can notice that it has an h1 and
+two ps.
+
+142
+00:11:26.530 --> 00:11:29.365
+Let's now look at the next git command.
+
+143
+00:11:30.815 --> 00:11:36.185
+The next git command that we are going to
+learn about is git checkout.
+
+144
+00:11:36.185 --> 00:11:40.300
+So this checkout command
+allows us to check out a file
+
+145
+00:11:40.300 --> 00:11:44.040
+from a previous commit
+in our git repository.
+
+146
+00:11:44.040 --> 00:11:48.050
+So if we don't like the current
+file that we have in our folder and
+
+147
+00:11:48.050 --> 00:11:51.160
+we want to go back to your
+previous version of the file,
+
+148
+00:11:51.160 --> 00:11:55.090
+we can always check out the file
+from a previous commit or
+
+149
+00:11:55.090 --> 00:12:00.230
+from the current commit and
+then continue to work with that file.
+
+150
+00:12:00.230 --> 00:12:07.431
+So let's make use of this and see some
+further changes to our git repository.
+
+151
+00:12:09.228 --> 00:12:15.366
+Going back to our command line,
+we remember that, between the second and
+
+152
+00:12:15.366 --> 00:12:20.235
+the third commit,
+I made changes to my index.html file.
+
+153
+00:12:20.235 --> 00:12:25.735
+Suppose I want to revert back to
+the index.html file from my second commit.
+
+154
+00:12:25.735 --> 00:12:29.885
+So then, I can simply say,
+
+155
+00:12:29.885 --> 00:12:34.039
+git checkout 900cfcf.
+
+156
+00:12:34.039 --> 00:12:41.035
+So that is commit identify the number
+that identifies the particular commit,
+
+157
+00:12:41.035 --> 00:12:46.971
+and then I can say index.html, and
+what you would notice is that,
+
+158
+00:12:46.971 --> 00:12:53.662
+that older file will now be checked
+out into my current working directory.
+
+159
+00:12:55.845 --> 00:12:58.018
+Going to my Visual Studio Code,
+
+160
+00:12:58.018 --> 00:13:03.811
+you'll now notice that my index.html file
+has reverted to the previous working so,
+
+161
+00:13:03.811 --> 00:13:08.580
+the change that I made before
+the third commit it is now gone.
+
+162
+00:13:08.580 --> 00:13:16.690
+So my index.html file has been restored to
+its state at the end of the second commit.
+
+163
+00:13:18.920 --> 00:13:23.042
+Now, at the command line,
+if I try git status,
+
+164
+00:13:23.042 --> 00:13:28.403
+you'll notice that this index.html
+file which was reverted
+
+165
+00:13:28.403 --> 00:13:35.470
+to what it was at the end of the second
+commit, it has now already been staged.
+
+166
+00:13:35.470 --> 00:13:40.930
+So using this git checkout, we'll pull
+out an older version of the file,
+
+167
+00:13:40.930 --> 00:13:44.390
+and then replace what is in
+the current directory, and
+
+168
+00:13:44.390 --> 00:13:47.670
+then it'll also check it
+into the staging area.
+
+169
+00:13:48.970 --> 00:13:53.400
+So now if I do that and
+then I realize that this is what I want,
+
+170
+00:13:53.400 --> 00:13:56.450
+I can simply do another
+commit at this point.
+
+171
+00:13:56.450 --> 00:14:02.445
+And then that file can be
+committed as the fourth commit.
+
+172
+00:14:02.445 --> 00:14:07.812
+But suppose I don't like this,
+I want to double
+
+173
+00:14:07.812 --> 00:14:12.641
+to back to the index.html
+file at the end of
+
+174
+00:14:12.641 --> 00:14:18.291
+the third commit then all
+I can do is say git reset,
+
+175
+00:14:20.339 --> 00:14:25.698
+HEAD and index.html.
+
+176
+00:14:28.236 --> 00:14:33.356
+So at this point,
+what happens is that the index.html,
+
+177
+00:14:33.356 --> 00:14:38.796
+the modified version that I had
+checked out is still there but
+
+178
+00:14:38.796 --> 00:14:43.397
+this file has been unstaged
+from the staging area.
+
+179
+00:14:43.397 --> 00:14:49.803
+If you go back and
+look at the index.html in your editor,
+
+180
+00:14:49.803 --> 00:14:56.680
+it will still show the state at
+the end of the second commit.
+
+181
+00:14:56.680 --> 00:15:01.250
+Because we had pulled out
+the file using checkout for that.
+
+182
+00:15:01.250 --> 00:15:06.900
+Now, if you want to revert it back to what
+it was at the end of the third commit,
+
+183
+00:15:06.900 --> 00:15:11.956
+then we do one more checkout from
+the third commit going to our
+
+184
+00:15:11.956 --> 00:15:18.900
+command window, type git status and
+
+185
+00:15:18.900 --> 00:15:23.920
+you would notice that the index.html
+is marked as modified.
+
+186
+00:15:23.920 --> 00:15:28.870
+But it also shows this
+particular statement here.
+
+187
+00:15:28.870 --> 00:15:32.270
+It says git checkout -- and
+
+188
+00:15:32.270 --> 00:15:35.310
+the file name, to discard the changes
+in the working directories.
+
+189
+00:15:35.310 --> 00:15:39.270
+So that's one way you can discard the
+changes that you have made to a particular
+
+190
+00:15:39.270 --> 00:15:43.095
+file corresponding to
+the previous comment.
+
+191
+00:15:43.095 --> 00:15:46.875
+So let me just restore that index.html
+back to what it was at the end of
+
+192
+00:15:46.875 --> 00:15:48.205
+the third commit.
+
+193
+00:15:48.205 --> 00:15:52.455
+So to do that,
+I could simply say git, checkout,
+
+194
+00:15:52.455 --> 00:15:58.540
+-- index.html and then,
+
+195
+00:15:58.540 --> 00:16:05.480
+if I do git status,
+it shows that my directory is clean.
+
+196
+00:16:05.480 --> 00:16:08.130
+And basically my directory
+has been restored to
+
+197
+00:16:08.130 --> 00:16:10.520
+the state at the end of the third commit.
+
+198
+00:16:12.370 --> 00:16:17.580
+Going to the file in my
+Virtual Studio Code, I see that
+
+199
+00:16:17.580 --> 00:16:21.060
+their file has been restored back to
+what it was at the end of the third cap.
+
+200
+00:16:21.060 --> 00:16:24.740
+So this is one way you can,
+if you have made changes to your
+
+201
+00:16:24.740 --> 00:16:27.740
+file after the commit and
+you want to just discard those changes,
+
+202
+00:16:27.740 --> 00:16:31.810
+you can simply check out the file from
+the last commit, and then all your
+
+203
+00:16:31.810 --> 00:16:36.220
+changes that you've done after the last
+commit will be discarded on the spot.
+
+204
+00:16:36.220 --> 00:16:40.960
+So these are some basic commands
+that are very useful for
+
+205
+00:16:40.960 --> 00:16:44.510
+you as you go through the courses
+in this specialization
+
+206
+00:16:44.510 --> 00:16:49.160
+because you may want to commit
+at the end of each exercise.
+
+207
+00:16:49.160 --> 00:16:56.220
+And as you proceed forward,
+you would still have a guided vision of
+
+208
+00:16:56.220 --> 00:17:01.790
+the state of your folder at
+the end of the previous exercise.
+
+209
+00:17:01.790 --> 00:17:06.180
+So that way, if you're carrying out a new
+exercise and you've discovered that you've
+
+210
+00:17:06.180 --> 00:17:10.320
+made mistakes and you want to
+revert back to the previous commit,
+
+211
+00:17:10.320 --> 00:17:18.000
+you always have a way of doing that using
+the commands that we have just let.
+
+212
+00:17:18.000 --> 00:17:24.430
+So with this basic understanding
+of this few git commands,
+
+213
+00:17:24.430 --> 00:17:29.260
+you'll be able to proceed
+forward with understanding and
+
+214
+00:17:29.260 --> 00:17:33.570
+using git in the courses
+of this specialization.
+
+215
+00:17:35.560 --> 00:17:41.685
+So now, we have reviewed the git reset for
+a specific file or git reset in general.
+
+216
+00:17:41.685 --> 00:17:47.970
+If you simply type git reset,
+it'll restore you back to the last commit.
+
+217
+00:17:47.970 --> 00:17:50.680
+So it will reset the staging
+area to the last commit,
+
+218
+00:17:50.680 --> 00:17:55.270
+without disturbing the changes that you
+have done to your working directory.
+
+219
+00:17:55.270 --> 00:17:58.390
+So once you reset, then you can check out
+
+220
+00:17:58.390 --> 00:18:02.140
+the previous version of the file that you
+have committed in the previous commit.
+
+221
+00:18:02.140 --> 00:18:07.380
+So this week, you can restore your
+folder back to the where you were at
+
+222
+00:18:07.380 --> 00:18:10.450
+the starting point of the previous commit.
+
+223
+00:18:10.450 --> 00:18:15.300
+So sometimes when you are going through an
+exercise and you realize you missed a cue.
+
+224
+00:18:15.300 --> 00:18:20.174
+Always have a way of reverting
+back to a previous version.
+
+225
+00:18:20.174 --> 00:18:25.027
+So with these commands,
+I think you're all set to go ahead to
+
+226
+00:18:25.027 --> 00:18:28.849
+use git in the courses
+of this specialization.
+
+227
+00:18:31.070 --> 00:18:34.395
+So at the end of this exercise,
+did you Git it?
+
+228
+00:18:34.395 --> 00:18:37.459
+[MUSIC]

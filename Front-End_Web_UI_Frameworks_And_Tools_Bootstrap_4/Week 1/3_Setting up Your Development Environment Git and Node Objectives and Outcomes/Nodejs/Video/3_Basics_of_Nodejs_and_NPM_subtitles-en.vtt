@@ -1,0 +1,1366 @@
+WEBVTT
+
+1
+00:00:00.000 --> 00:00:05.693
+[MUSIC]
+
+2
+00:00:05.693 --> 00:00:09.002
+Now that you have Node.js
+on your computer,
+
+3
+00:00:09.002 --> 00:00:13.870
+you're obviously wanting to
+immediately start using it.
+
+4
+00:00:13.870 --> 00:00:17.038
+So, in this exercise,
+we will start using Node.
+
+5
+00:00:17.038 --> 00:00:20.921
+We will set up a packaged,
+or adjacent, file for
+
+6
+00:00:20.921 --> 00:00:25.500
+our Git test folder that we
+have been working with so far.
+
+7
+00:00:25.500 --> 00:00:30.400
+Then, we will setup a node module
+called as lite server that
+
+8
+00:00:30.400 --> 00:00:34.519
+will serve up the contents
+of our get test folder.
+
+9
+00:00:34.519 --> 00:00:39.760
+And then we can browse
+this index.html file and
+
+10
+00:00:39.760 --> 00:00:43.320
+other files in a browser.
+
+11
+00:00:43.320 --> 00:00:48.960
+And we will also see how
+the lite server will enable us to
+
+12
+00:00:50.390 --> 00:00:56.805
+automatically see updates to our browser
+window as we make changes to our
+
+13
+00:00:56.805 --> 00:01:02.333
+index.html file, or
+any other files in our get test folder.
+
+14
+00:01:02.333 --> 00:01:08.916
+The lite server is something that we're
+going to extensively use in this and
+
+15
+00:01:08.916 --> 00:01:14.010
+future courses,
+to be able to see the changes in real time
+
+16
+00:01:14.010 --> 00:01:19.125
+in a browser window as you edit
+the files of your project.
+
+17
+00:01:22.216 --> 00:01:25.650
+As I mentioned,
+we want to set up the package.json file.
+
+18
+00:01:25.650 --> 00:01:29.300
+So what exactly is this package.json
+file that we're going to setup?
+
+19
+00:01:29.300 --> 00:01:32.738
+So here, I have some information from
+
+20
+00:01:32.738 --> 00:01:38.390
+the npmjs.org site
+
+21
+00:01:38.390 --> 00:01:43.176
+which specifies what exactly is
+the role of the package.json file.
+
+22
+00:01:43.176 --> 00:01:47.781
+So the package.json file serves
+as the documentation on what all
+
+23
+00:01:47.781 --> 00:01:51.670
+other packages that your
+project is dependent upon.
+
+24
+00:01:51.670 --> 00:01:56.030
+So, for example, when you set up
+the lite server of your project,
+
+25
+00:01:56.030 --> 00:01:58.907
+that will be recorded in
+the package.json file.
+
+26
+00:01:58.907 --> 00:02:07.200
+And so that, subsequently, you can also
+make use of that package in the future.
+
+27
+00:02:07.200 --> 00:02:12.460
+Also, it allows you to specify
+which specific version of a package
+
+28
+00:02:12.460 --> 00:02:14.710
+that your project is dependent on.
+
+29
+00:02:14.710 --> 00:02:19.784
+So even if the package that you
+depend on changes in the future,
+
+30
+00:02:19.784 --> 00:02:24.762
+you may insist that you want
+the user to install only a specific
+
+31
+00:02:24.762 --> 00:02:30.650
+version of the package for
+use within your node application.
+
+32
+00:02:30.650 --> 00:02:34.151
+And also,
+it makes your builds reproducible,
+
+33
+00:02:34.151 --> 00:02:38.177
+which means that when you
+share your code with others,
+
+34
+00:02:38.177 --> 00:02:42.552
+then they can also do installation
+of all the node modules,
+
+35
+00:02:42.552 --> 00:02:47.128
+as we will see later in this exercise,
+on their own computer.
+
+36
+00:02:50.900 --> 00:02:57.610
+So obviously your next question will be,
+how do we create this package.json file?
+
+37
+00:02:57.610 --> 00:03:04.473
+If you are starting a new project where
+you want to initialize the package.json
+
+38
+00:03:04.473 --> 00:03:10.425
+file, then simply type npm init at
+the prompt in the project folder.
+
+39
+00:03:10.425 --> 00:03:14.789
+And then that will take you through
+a set of steps which will enable you to
+
+40
+00:03:14.789 --> 00:03:17.150
+configure your package.json file.
+
+41
+00:03:17.150 --> 00:03:20.910
+So let's proceed with that for
+our Git test project.
+
+42
+00:03:22.290 --> 00:03:28.200
+So here I am in the git-test
+folder in my terminal window.
+
+43
+00:03:28.200 --> 00:03:32.615
+Make sure that you also open a terminal
+window or a command window and
+
+44
+00:03:32.615 --> 00:03:34.791
+then go to the git-test folder.
+
+45
+00:03:34.791 --> 00:03:38.831
+And at the prompt, type npm init.
+
+46
+00:03:38.831 --> 00:03:43.235
+And then follow along
+the questions that are asked.
+
+47
+00:03:43.235 --> 00:03:48.275
+So for the name of the project, we'll
+just leave it as the default, git-test.
+
+48
+00:03:48.275 --> 00:03:51.546
+For version, we'll just leave it as 1.0.0.
+
+49
+00:03:51.546 --> 00:03:53.135
+We can edit that later.
+
+50
+00:03:53.135 --> 00:03:58.252
+For description,
+
+51
+00:03:58.252 --> 00:04:04.647
+this is a test directory
+
+52
+00:04:04.647 --> 00:04:10.740
+to learn Git and Node.
+
+53
+00:04:10.740 --> 00:04:13.400
+It doesn't matter,
+type some description there.
+
+54
+00:04:13.400 --> 00:04:16.994
+And then the entry point,
+I would just say index.html.
+
+55
+00:04:18.260 --> 00:04:24.508
+Usually if it is a node package,
+the entry point will be index.js.
+
+56
+00:04:24.508 --> 00:04:28.623
+Now this folder that we have setup is
+
+57
+00:04:28.623 --> 00:04:34.280
+an index.html based folder, so
+that's why I just typed in index.html.
+
+58
+00:04:34.280 --> 00:04:35.972
+Test command, nothing.
+
+59
+00:04:35.972 --> 00:04:40.994
+Git repository, if we had already setup
+the git repository in the previous
+
+60
+00:04:40.994 --> 00:04:45.297
+exercise, it'll automatically
+prompt that for you, if not,
+
+61
+00:04:45.297 --> 00:04:50.318
+this would be empty and give you an option
+to type in the git repository URL,
+
+62
+00:04:50.318 --> 00:04:53.920
+in case you're using
+an online git repository.
+
+63
+00:04:53.920 --> 00:04:56.980
+Some keywords for your project,
+which I'm going to leave blank.
+
+64
+00:04:56.980 --> 00:04:58.760
+Author, type your name.
+
+65
+00:04:58.760 --> 00:05:00.214
+Let's be narcissistic.
+
+66
+00:05:04.497 --> 00:05:06.590
+And the license.
+
+67
+00:05:06.590 --> 00:05:15.050
+And then, it'll show you the configuration
+of the package.json file in JSON format.
+
+68
+00:05:15.050 --> 00:05:18.860
+So if your family have a JSON,
+does it look very, very familiar to you.
+
+69
+00:05:18.860 --> 00:05:22.210
+So if this looks all good,
+let's just say OK and
+
+70
+00:05:22.210 --> 00:05:27.790
+then that results in the creation
+of the package.json file.
+
+71
+00:05:27.790 --> 00:05:30.970
+So now if you list the folder contents,
+
+72
+00:05:30.970 --> 00:05:34.680
+you would see the package.json
+file in the folder contents.
+
+73
+00:05:36.430 --> 00:05:42.210
+Open that Git test folder
+in your favorite editor,
+
+74
+00:05:42.210 --> 00:05:47.270
+and then take a look at the contents
+of package.json file in your editor.
+
+75
+00:05:48.950 --> 00:05:54.470
+As the next step, we will learn
+how we can install a node module
+
+76
+00:05:54.470 --> 00:05:57.950
+using NPM, the Node Package Manager.
+
+77
+00:05:57.950 --> 00:06:02.750
+So, we're going to install this
+node module called as light server.
+
+78
+00:06:02.750 --> 00:06:07.890
+The light server will serve up
+the contents of this git-test folder in
+
+79
+00:06:07.890 --> 00:06:13.150
+a server that it starts up so that you
+can view the contents in a browser.
+
+80
+00:06:13.150 --> 00:06:15.753
+Given that we have an index.html file,
+
+81
+00:06:15.753 --> 00:06:19.580
+if we serve up this folder,
+then it'll be a website.
+
+82
+00:06:19.580 --> 00:06:24.130
+And you can view
+the index.html in a browser.
+
+83
+00:06:24.130 --> 00:06:28.460
+So, let's set up the light server and
+then we will see how we can make
+
+84
+00:06:28.460 --> 00:06:31.820
+use of the light server to serve
+up the contents of this folder.
+
+85
+00:06:31.820 --> 00:06:36.530
+This is very, very useful because if
+you're working on a web development
+
+86
+00:06:36.530 --> 00:06:42.240
+project, you want to see where live
+version of your web development project.
+
+87
+00:06:42.240 --> 00:06:45.060
+So that,
+as you make changes to your project,
+
+88
+00:06:45.060 --> 00:06:49.400
+you can see the changes immediately
+reflected in the browser.
+
+89
+00:06:49.400 --> 00:06:53.840
+So this is a very good node package
+that is very useful for this purpose.
+
+90
+00:06:53.840 --> 00:06:55.980
+So let's set up this light server.
+
+91
+00:06:55.980 --> 00:06:58.190
+To do that, add the prompt.
+
+92
+00:06:58.190 --> 00:07:01.120
+Type in NPM install.
+
+93
+00:07:01.120 --> 00:07:05.244
+So notice,
+if you want NPM to install a node package,
+
+94
+00:07:05.244 --> 00:07:10.686
+this is how you're going to invoke it and
+then you'd say lite-server.
+
+95
+00:07:10.686 --> 00:07:16.685
+And then, we also want to save the fact
+that our project is using the lite server.
+
+96
+00:07:16.685 --> 00:07:20.587
+So we will save this information
+in the package.json file.
+
+97
+00:07:20.587 --> 00:07:27.492
+So to do that,
+you're going to type in -- save-dev.
+
+98
+00:07:27.492 --> 00:07:33.398
+Now the save-dev option specifies
+that this lite server is used for
+
+99
+00:07:33.398 --> 00:07:37.820
+development dependency for our project.
+
+100
+00:07:37.820 --> 00:07:43.230
+If you are installing a node module on
+which your project is directly dependent
+
+101
+00:07:43.230 --> 00:07:48.680
+on, then you would install it
+by simply saying --save option.
+
+102
+00:07:49.680 --> 00:07:52.110
+So, let's go ahead and install it.
+
+103
+00:07:52.110 --> 00:07:56.990
+And you wait patiently for
+the installation to take place.
+
+104
+00:08:00.140 --> 00:08:06.890
+It'll take all of a few minutes for
+that to complete its installation.
+
+105
+00:08:06.890 --> 00:08:11.830
+Once that is installed,
+then you would immediately
+
+106
+00:08:11.830 --> 00:08:16.771
+notice when you look at
+the contents of your folder,
+
+107
+00:08:16.771 --> 00:08:25.099
+you will immediately notice that there is
+a folder there created named node_modules.
+
+108
+00:08:25.099 --> 00:08:30.251
+Now, if you go into the node_module,
+you will see a whole bunch
+
+109
+00:08:30.251 --> 00:08:35.120
+of other subfolders in there,
+which contain node modules,
+
+110
+00:08:35.120 --> 00:08:40.098
+which are necessary for
+the likes of our node module and so on.
+
+111
+00:08:40.098 --> 00:08:44.873
+So let's take a quick tour of
+the node modules folder to see
+
+112
+00:08:44.873 --> 00:08:47.515
+what the contents of these are.
+
+113
+00:08:50.764 --> 00:08:55.713
+Going to my git-test folder, if you're
+going to the node modules folder,
+
+114
+00:08:55.713 --> 00:09:00.130
+you would see, as I said,
+a whole bunch of subfolders there.
+
+115
+00:09:00.130 --> 00:09:04.972
+Normally you don't need to be venturing
+into the node modules folder.
+
+116
+00:09:04.972 --> 00:09:09.222
+They just exist there because they
+are needed for the [INAUDIBLE].
+
+117
+00:09:09.222 --> 00:09:16.470
+So as you browse through, you should
+notice a folder named lite-server here.
+
+118
+00:09:16.470 --> 00:09:18.970
+When you go into the lite-server folder,
+
+119
+00:09:18.970 --> 00:09:23.860
+note in particular the presence
+of the index.js file and
+
+120
+00:09:23.860 --> 00:09:27.690
+then your package.json file and
+several other things.
+
+121
+00:09:27.690 --> 00:09:33.538
+So this contents of the folder
+comprises the lite-server node module.
+
+122
+00:09:33.538 --> 00:09:38.010
+But this lite-server node module
+is dependent on other node modules
+
+123
+00:09:38.010 --> 00:09:41.120
+to provide it with some
+additional functionality.
+
+124
+00:09:41.120 --> 00:09:45.190
+So that's the reason when you install the
+light server node module, it'll in turn
+
+125
+00:09:45.190 --> 00:09:51.590
+install many other node modules, on which
+the light server itself is dependent on.
+
+126
+00:09:51.590 --> 00:09:56.239
+So that's the reason why
+you see that explosion of
+
+127
+00:09:56.239 --> 00:10:00.800
+this folders inside the node modules.
+
+128
+00:10:00.800 --> 00:10:04.670
+Don't be too concerned about it,
+the sum total of folders will not be
+
+129
+00:10:04.670 --> 00:10:08.620
+more than a few tens of megabytes.
+
+130
+00:10:08.620 --> 00:10:12.310
+So it is not going to fill
+up your directory with junk.
+
+131
+00:10:13.400 --> 00:10:17.680
+This is all essential for
+node to be able to help you.
+
+132
+00:10:19.420 --> 00:10:24.280
+In case you're curious about the
+lite-server and how it works and so on,
+
+133
+00:10:24.280 --> 00:10:29.780
+you can always go down to this GitHub
+site where the lite-server is hosted.
+
+134
+00:10:29.780 --> 00:10:35.260
+And then look up the documentation for
+lite-server.
+
+135
+00:10:35.260 --> 00:10:40.040
+I will introduce you to whatever you need
+to know about lite-server as we go through
+
+136
+00:10:40.040 --> 00:10:42.830
+this course and the remaining courses.
+
+137
+00:10:42.830 --> 00:10:47.223
+So you don't need to worry too much about
+it, but just in case you're curious,
+
+138
+00:10:47.223 --> 00:10:51.306
+you can always go to the site to find
+out more details about lite-server.
+
+139
+00:10:51.306 --> 00:10:56.651
+The link is provided in your
+exercise instructions and
+
+140
+00:10:56.651 --> 00:11:01.307
+additional resources
+are part of this lesson.
+
+141
+00:11:03.640 --> 00:11:08.556
+Once you have completed that,
+then head over to the.
+
+142
+00:11:10.139 --> 00:11:15.050
+Editor where you have the folder,
+Git-Test folder, opened and
+
+143
+00:11:15.050 --> 00:11:18.925
+then view the contents of
+the package.json file.
+
+144
+00:11:18.925 --> 00:11:23.876
+So you would see that the package.json
+file contains exactly the information that
+
+145
+00:11:23.876 --> 00:11:25.722
+you configured with your NPM.
+
+146
+00:11:25.722 --> 00:11:30.937
+So you would see the name version and
+repository author and
+
+147
+00:11:30.937 --> 00:11:35.096
+in particular, note this information here.
+
+148
+00:11:35.096 --> 00:11:41.211
+It says devDependencies, so
+then it specifies the lite-sever,
+
+149
+00:11:41.211 --> 00:11:44.931
+and also notice it says hat 2.2.2.
+
+150
+00:11:44.931 --> 00:11:50.643
+So which means that this
+particular project depends
+
+151
+00:11:50.643 --> 00:11:58.056
+upon lite-server that is a at
+least version 2.2.2 or higher.
+
+152
+00:11:58.056 --> 00:12:00.472
+So this is very useful for us.
+
+153
+00:12:00.472 --> 00:12:04.110
+Now why do we need this information here?
+
+154
+00:12:04.110 --> 00:12:07.331
+Later on,
+when you go to the other exercises,
+
+155
+00:12:07.331 --> 00:12:11.874
+you will notice that when you store
+this on an online repository,
+
+156
+00:12:11.874 --> 00:12:16.765
+you don't want to be storing
+everything in your node modules folder.
+
+157
+00:12:16.765 --> 00:12:23.950
+You will only be storing information
+of all the files that we have created.
+
+158
+00:12:23.950 --> 00:12:28.849
+The node modules folder
+can always be recreated by
+
+159
+00:12:28.849 --> 00:12:33.056
+typing NPM install at our command prompt.
+
+160
+00:12:33.056 --> 00:12:35.905
+And then based upon
+the dev dependencies and
+
+161
+00:12:35.905 --> 00:12:40.602
+dependencies that are listed in
+the packager file, all the node
+
+162
+00:12:40.602 --> 00:12:45.306
+modules that your project depends
+on will automatically be installed.
+
+163
+00:12:45.306 --> 00:12:50.194
+We will see that later on how to use
+
+164
+00:12:50.194 --> 00:12:54.389
+NPM install in this course.
+
+165
+00:12:56.473 --> 00:13:02.098
+Now that we are at package.json file
+let's make a couple of edits so
+
+166
+00:13:02.098 --> 00:13:08.431
+that we will be able to make use of
+the lite-server to serve up that content.
+
+167
+00:13:08.431 --> 00:13:14.520
+So right here,
+in this option called scripts,
+
+168
+00:13:14.520 --> 00:13:18.181
+let's add in one more here.
+
+169
+00:13:18.181 --> 00:13:20.806
+So we will say "start".
+
+170
+00:13:20.806 --> 00:13:26.673
+So start is a command that
+NPM supports which enables
+
+171
+00:13:26.673 --> 00:13:32.682
+you to specify a bunch of
+things that will be started.
+
+172
+00:13:32.682 --> 00:13:35.264
+So later on we will see
+how we make use of this.
+
+173
+00:13:35.264 --> 00:13:39.512
+So here I'm going to say "npm run lite".
+
+174
+00:13:43.557 --> 00:13:48.462
+And after that test, I'm going to add
+
+175
+00:13:48.462 --> 00:13:53.059
+in one more entry called "lite",
+
+176
+00:13:53.059 --> 00:13:59.971
+which I will configure as "lite-server",
+okay?
+
+177
+00:13:59.971 --> 00:14:04.889
+With these changes,
+let's save the package.json file.
+
+178
+00:14:04.889 --> 00:14:11.170
+And then, now our project is configured,
+so that now if you start the lite- server,
+
+179
+00:14:11.170 --> 00:14:16.682
+the contents of your folder will be now
+served up in your favorite browser.
+
+180
+00:14:21.306 --> 00:14:24.890
+Heading back to our command prompt,
+add the prompt.
+
+181
+00:14:24.890 --> 00:14:29.531
+If I type, npm start,
+now you see why I put that
+
+182
+00:14:29.531 --> 00:14:34.181
+entry card start into
+my package.JSON file.
+
+183
+00:14:34.181 --> 00:14:41.222
+If I say npm start, whatever the start is
+configured as in the package.JSON file,
+
+184
+00:14:41.222 --> 00:14:47.472
+we specify that npm run light, and
+the lite was specified as lite server.
+
+185
+00:14:47.472 --> 00:14:50.420
+So essentially,
+we are saying Start the lite-server.
+
+186
+00:14:50.420 --> 00:14:54.821
+So, once I type npm start,
+it will start the lite-server, and
+
+187
+00:14:54.821 --> 00:14:57.931
+it will serve up
+the contents of this folder.
+
+188
+00:14:57.931 --> 00:15:00.889
+Now how do you access
+the contents of this folder?
+
+189
+00:15:00.889 --> 00:15:04.812
+If you want to accesses this locally,
+
+190
+00:15:04.812 --> 00:15:12.056
+you will access it by specifying
+the you are as localhost:3000.
+
+191
+00:15:12.056 --> 00:15:15.389
+These are the default settings for
+the lite-server.
+
+192
+00:15:15.389 --> 00:15:19.831
+Furthermore, this should
+automatically open
+
+193
+00:15:19.831 --> 00:15:24.382
+the browser window of
+your default browser, and
+
+194
+00:15:24.382 --> 00:15:29.722
+show the contents of index or
+HTML in the browser window.
+
+195
+00:15:29.722 --> 00:15:34.480
+Here you can see that I
+have opened my editor and
+
+196
+00:15:34.480 --> 00:15:39.849
+my browser window directed
+at localhost:3000
+
+197
+00:15:39.849 --> 00:15:44.730
+simultaneously side by side,
+so that we can see
+
+198
+00:15:44.730 --> 00:15:49.733
+how the browser window
+will immediately reflect
+
+199
+00:15:49.733 --> 00:15:54.760
+any changes that we make
+to our Git test folder.
+
+200
+00:15:54.760 --> 00:15:57.780
+So let me go to index.html.
+
+201
+00:15:57.780 --> 00:16:03.060
+And then for the sake of space,
+I'm going to turn that over.
+
+202
+00:16:03.060 --> 00:16:07.680
+And then, so here, you can see
+that this is the contents of this.
+
+203
+00:16:07.680 --> 00:16:11.554
+And then, now,
+let me add in one more paragraph.
+
+204
+00:16:21.328 --> 00:16:27.338
+And save the changes, and
+then you will immediately notice that
+
+205
+00:16:27.338 --> 00:16:34.980
+the change that I made to my index.html
+file is reflected into my browser.
+
+206
+00:16:34.980 --> 00:16:40.560
+This provides a very nice way
+of being able to observe in real
+
+207
+00:16:40.560 --> 00:16:45.890
+time the changes that you make to your
+code being reflected into your browser.
+
+208
+00:16:45.890 --> 00:16:49.920
+So when you are working on a project,
+it'll be very appropriate for
+
+209
+00:16:49.920 --> 00:16:52.175
+you to be able to see
+the changes immediately.
+
+210
+00:16:52.175 --> 00:16:54.895
+So when you make a change and
+then save the file,
+
+211
+00:16:54.895 --> 00:16:59.185
+the modified code is immediately
+loaded into your browser.
+
+212
+00:16:59.185 --> 00:17:04.420
+So you can immediately see the change
+being reflected in your browser window.
+
+213
+00:17:04.420 --> 00:17:12.400
+This is a very useful tool while you
+are doing development of your project.
+
+214
+00:17:12.400 --> 00:17:18.026
+That is the reason why I introduced
+you to that lite-server, and
+
+215
+00:17:18.026 --> 00:17:24.791
+set it up so that we can make use of it,
+as we develop the website in this course.
+
+216
+00:17:27.033 --> 00:17:32.092
+If you recall, we had already set up our
+git-test folder to be a Git repository.
+
+217
+00:17:32.092 --> 00:17:37.435
+So Checking again, We
+
+218
+00:17:37.435 --> 00:17:40.805
+will see that we already have three
+commits in our Git repository.
+
+219
+00:17:40.805 --> 00:17:45.885
+And this Git repository is already
+mirrored to our online Git repository
+
+220
+00:17:45.885 --> 00:17:51.015
+which we have set up in the previous
+exercise either at Bitbucket or GitHub.
+
+221
+00:17:51.015 --> 00:17:55.665
+My git-test folder is synced to my
+
+222
+00:17:55.665 --> 00:18:02.380
+Bitbucket repository in
+this particular exercise.
+
+223
+00:18:02.380 --> 00:18:08.220
+So what I'm going to do now is to
+show you how you can exclude some
+
+224
+00:18:08.220 --> 00:18:13.830
+folders from your project folder,
+
+225
+00:18:13.830 --> 00:18:19.760
+and then make sure that they are not
+synchronized to your online repository.
+
+226
+00:18:19.760 --> 00:18:24.480
+Now as I said, the node_modules
+folder can always be recreated
+
+227
+00:18:24.480 --> 00:18:27.840
+by typing npm install at the prompt.
+
+228
+00:18:27.840 --> 00:18:31.490
+So that's why when you upload
+
+229
+00:18:31.490 --> 00:18:36.690
+the contents of your folder
+to an online Git repository,
+
+230
+00:18:36.690 --> 00:18:42.320
+or when you do a commit of
+the folder to your Git repository,
+
+231
+00:18:42.320 --> 00:18:47.230
+you don't want the node_modules folder or
+all the subfolders under it to be
+
+232
+00:18:47.230 --> 00:18:52.280
+included in the commit.
+
+233
+00:18:52.280 --> 00:18:55.950
+So how do we exclude some folders or
+
+234
+00:18:55.950 --> 00:19:02.380
+some files from our folder from being
+checked in into our Git repository?
+
+235
+00:19:02.380 --> 00:19:08.680
+So to do that,
+we will set up a file named .gitignore.
+
+236
+00:19:08.680 --> 00:19:11.860
+So that's the name of the file,
+.gitignore.
+
+237
+00:19:11.860 --> 00:19:17.220
+So to create this .gitignore file,
+we will go to our editor.
+
+238
+00:19:18.550 --> 00:19:23.956
+So in the editor, in the git-test folder,
+
+239
+00:19:23.956 --> 00:19:31.300
+I'm going to create a new file and
+I will name it .gitignore.
+
+240
+00:19:31.300 --> 00:19:34.650
+Note that the name begins with a dot and
+
+241
+00:19:34.650 --> 00:19:39.840
+then, the rest of the name
+is g-i-t-i-g-n-o-r-e.
+
+242
+00:19:39.840 --> 00:19:44.492
+So this is very very important that you
+set up the file with exactly that name,
+
+243
+00:19:44.492 --> 00:19:45.329
+.gitignore.
+
+244
+00:19:46.500 --> 00:19:51.070
+So let's create this file
+called .gitignore, and
+
+245
+00:19:51.070 --> 00:19:57.360
+the first line of that file,
+we will type as node_modules.
+
+246
+00:19:57.360 --> 00:20:01.450
+So what this means is that
+the node_modules folder is going to be
+
+247
+00:20:01.450 --> 00:20:04.410
+excluded from our git commit.
+
+248
+00:20:05.850 --> 00:20:08.896
+So once I create that .gitignore file and
+
+249
+00:20:08.896 --> 00:20:14.900
+then add node_modules into the .gitignore
+file, let's save the changes.
+
+250
+00:20:14.900 --> 00:20:19.735
+And then we will now do a commit of
+the current state of our project
+
+251
+00:20:19.735 --> 00:20:24.700
+into our Git repository.
+
+252
+00:20:24.700 --> 00:20:27.220
+I hope you remember your git commands.
+
+253
+00:20:27.220 --> 00:20:31.310
+Let's do a git status,
+and then when you do that,
+
+254
+00:20:31.310 --> 00:20:36.194
+you will immediately notice
+that you have the index.html
+
+255
+00:20:36.194 --> 00:20:42.070
+file marked as modified, and then the two
+new files, .gitignore and package.json.
+
+256
+00:20:42.070 --> 00:20:49.500
+So, we do a git add .,
+and then do a git status.
+
+257
+00:20:49.500 --> 00:20:54.120
+And then you see that all this new files
+have been checked in into your commit.
+
+258
+00:20:54.120 --> 00:21:01.090
+Let's do a git commit.
+git commit -m "fourth commit".
+
+259
+00:21:01.090 --> 00:21:05.440
+And the files are committed.
+
+260
+00:21:05.440 --> 00:21:09.303
+Let's push the new commit
+to our online repository.
+
+261
+00:21:09.303 --> 00:21:13.905
+So, to do that git push -u
+
+262
+00:21:13.905 --> 00:21:18.510
+origin master and wait for
+
+263
+00:21:18.510 --> 00:21:23.750
+it to be pushed to our server.
+
+264
+00:21:23.750 --> 00:21:27.403
+Now, if you go to your
+online Git repository,
+
+265
+00:21:27.403 --> 00:21:30.871
+you will see that
+the package.json file and
+
+266
+00:21:30.871 --> 00:21:36.132
+.gitignore would have been checked
+in into your Git repository.
+
+267
+00:21:36.132 --> 00:21:41.195
+Going to my Bitbucket repository
+from the Git test, you will see that
+
+268
+00:21:41.195 --> 00:21:47.320
+when I look at the source, you will see
+that the package.json file has been added.
+
+269
+00:21:47.320 --> 00:21:54.600
+The .gitignore has been added and the new
+index.html file has been checked in.
+
+270
+00:21:54.600 --> 00:21:57.570
+So that completes this exercise.
+
+271
+00:21:57.570 --> 00:21:58.770
+So in this exercise,
+
+272
+00:21:58.770 --> 00:22:03.586
+we have learned how to set up
+a package.json file using npm init.
+
+273
+00:22:03.586 --> 00:22:07.310
+We have learned how to
+install an npm module.
+
+274
+00:22:07.310 --> 00:22:11.900
+And we have learned how to use
+the lite-server npm module to serve up
+
+275
+00:22:11.900 --> 00:22:18.100
+the contents of our project folder so
+that it can be viewed in a browser.
+
+276
+00:22:18.100 --> 00:22:21.920
+So, this is a nice way of
+serving up your web contents,
+
+277
+00:22:21.920 --> 00:22:25.360
+your web application or your website, so
+
+278
+00:22:25.360 --> 00:22:31.680
+that you can see changes in real time
+being reflected to your browser window.
+
+279
+00:22:31.680 --> 00:22:37.280
+And then we also saw how we can
+setup the .gitignore so that some
+
+280
+00:22:37.280 --> 00:22:42.790
+folders can be excluded from being
+checked into our Git repository.
+
+281
+00:22:42.790 --> 00:22:45.450
+This completes this exercise.
+
+282
+00:22:45.450 --> 00:22:50.450
+So with this,
+I'm sure you have gotten a good handle on
+
+283
+00:22:50.450 --> 00:22:56.280
+the use of both Git, and
+then also node and node modules.
+
+284
+00:22:56.280 --> 00:23:02.020
+Don't worry, we will be using node
+extensively, in various ways,
+
+285
+00:23:02.020 --> 00:23:05.610
+as you go through the courses
+of this specialization.
+
+286
+00:23:05.610 --> 00:23:06.497
+This is just a start.
+
+287
+00:23:06.497 --> 00:23:13.270
+[MUSIC]

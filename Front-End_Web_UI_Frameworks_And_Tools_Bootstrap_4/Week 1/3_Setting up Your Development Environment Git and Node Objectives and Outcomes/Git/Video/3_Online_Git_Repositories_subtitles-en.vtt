@@ -1,0 +1,732 @@
+WEBVTT
+
+1
+00:00:00.000 --> 00:00:04.228
+[MUSIC]
+
+2
+00:00:04.228 --> 00:00:09.025
+Online Git repositories
+enable you to store a copy of
+
+3
+00:00:09.025 --> 00:00:12.200
+your Git repository online.
+
+4
+00:00:12.200 --> 00:00:19.550
+And It can easily be shared among
+multiple computers and multiple users.
+
+5
+00:00:19.550 --> 00:00:25.345
+Let’s learn about two of the online
+Git repository service providers,
+
+6
+00:00:25.345 --> 00:00:28.950
+GitHub and Bitbucket,
+in a little bit more detail.
+
+7
+00:00:30.020 --> 00:00:34.550
+We’ll look at how we can set
+up our local Git repository
+
+8
+00:00:34.550 --> 00:00:37.980
+to be mirrored in
+an online Git repository.
+
+9
+00:00:39.210 --> 00:00:43.540
+There are several online Git
+repository service providers.
+
+10
+00:00:43.540 --> 00:00:48.530
+Two of the most popular ones
+are GitHub and Bitbucket.
+
+11
+00:00:48.530 --> 00:00:53.720
+I will go through in more detail about how
+you can set up your Git repository that
+
+12
+00:00:53.720 --> 00:00:59.010
+you prepared in the previous exercise to
+
+13
+00:01:00.260 --> 00:01:04.160
+be made out on an online Git
+repository on Bitbucket.
+
+14
+00:01:05.620 --> 00:01:10.216
+To set up in online Git repository,
+go to one of these
+
+15
+00:01:10.216 --> 00:01:15.510
+online service providers and
+then sign up for an account.
+
+16
+00:01:15.510 --> 00:01:20.290
+So here, I have signed up into
+my Bitbucket account, and
+
+17
+00:01:20.290 --> 00:01:23.200
+I have my homepage open here.
+
+18
+00:01:23.200 --> 00:01:26.950
+And so
+I'm going to create a new repository
+
+19
+00:01:26.950 --> 00:01:30.010
+online on my Bitbucket repository.
+
+20
+00:01:30.010 --> 00:01:33.010
+So I just click on the Create repository,
+and
+
+21
+00:01:33.010 --> 00:01:36.165
+then this would come up with some details.
+
+22
+00:01:36.165 --> 00:01:40.420
+Now, this varies with
+the repository service provider.
+
+23
+00:01:40.420 --> 00:01:46.740
+So here,
+I will specify the name of the repository
+
+24
+00:01:46.740 --> 00:01:52.700
+as git-test, and I'm going to mark
+this as a private repository.
+
+25
+00:01:52.700 --> 00:01:57.980
+For this course and all the remaining
+courses in this specialization,
+
+26
+00:01:57.980 --> 00:02:04.040
+I would strongly advise you to keep your
+repositories as private repositories,
+
+27
+00:02:04.040 --> 00:02:08.440
+because you don't want somebody else to
+be copying the code that you might save
+
+28
+00:02:08.440 --> 00:02:10.070
+in your online Git repository.
+
+29
+00:02:10.070 --> 00:02:11.280
+So please,
+
+30
+00:02:11.280 --> 00:02:17.120
+make sure that you only use private
+repositories in this specialization.
+
+31
+00:02:17.120 --> 00:02:20.418
+So I will sign up as a get
+private repository, and
+
+32
+00:02:20.418 --> 00:02:23.770
+then simply click on create repository.
+
+33
+00:02:23.770 --> 00:02:30.270
+And then it'll do some setup,
+and then be ready for me, okay?
+
+34
+00:02:30.270 --> 00:02:36.890
+Now, what I need to do is to copy this
+particular URL format repository.
+
+35
+00:02:36.890 --> 00:02:39.940
+So you will see a URL for
+
+36
+00:02:39.940 --> 00:02:45.260
+the repository in the home
+page of the repository.
+
+37
+00:02:45.260 --> 00:02:50.600
+So just copy that URL for the repository,
+because we would need that
+
+38
+00:02:50.600 --> 00:02:56.040
+in order to synchronize our local
+Git repository with this repository.
+
+39
+00:02:56.040 --> 00:02:57.572
+So I'm going to copy that.
+
+40
+00:02:57.572 --> 00:03:02.780
+And since I have already created my
+local Git repository, I'm going to go in
+
+41
+00:03:02.780 --> 00:03:08.140
+there and set that up to be mirrored
+in this online Git repository.
+
+42
+00:03:08.140 --> 00:03:14.010
+So for that, we need to use a couple of
+Git commands that enable us to do this.
+
+43
+00:03:15.540 --> 00:03:21.790
+Going to the command prompt in my
+Git repository folder I will type,
+
+44
+00:03:21.790 --> 00:03:26.960
+git remote add origin.
+
+45
+00:03:26.960 --> 00:03:31.080
+And then paste the URL for
+
+46
+00:03:31.080 --> 00:03:38.380
+my Bitbucket repository that I've
+just created, and hit the return.
+
+47
+00:03:38.380 --> 00:03:46.830
+So now, my local Git repository's remote
+origin is set to the Bitbucket repository.
+
+48
+00:03:46.830 --> 00:03:53.692
+So now, I want to be able to push
+the entire contents of my local
+
+49
+00:03:53.692 --> 00:03:59.100
+Git repository to my
+online Git repository.
+
+50
+00:03:59.100 --> 00:04:03.290
+So reviewing the commands for
+setting up the online Git repository,
+
+51
+00:04:03.290 --> 00:04:08.870
+the first one that we just did, git
+remote add origin and the repository URL.
+
+52
+00:04:08.870 --> 00:04:14.630
+And so this will add the online
+repository as the remote repository for
+
+53
+00:04:14.630 --> 00:04:16.900
+my local Git repository.
+
+54
+00:04:16.900 --> 00:04:21.595
+Once I do that, then I need to push
+my contents to my online repository.
+
+55
+00:04:21.595 --> 00:04:27.920
+So for that,
+I do git push -u origin master.
+
+56
+00:04:27.920 --> 00:04:33.840
+And this command would push the local
+Git repository to the online repository.
+
+57
+00:04:33.840 --> 00:04:36.706
+So let's type that at the command prompt.
+
+58
+00:04:45.035 --> 00:04:48.851
+So once I type this at
+the command prompt and
+
+59
+00:04:48.851 --> 00:04:54.210
+hit the return,
+it's going to set up my Git repository.
+
+60
+00:04:54.210 --> 00:04:59.005
+Sometimes it may ask you
+to type in your credentials
+
+61
+00:04:59.005 --> 00:05:04.035
+including your password on
+your Bitbucket account.
+
+62
+00:05:04.035 --> 00:05:05.595
+So you may have to do that.
+
+63
+00:05:05.595 --> 00:05:09.095
+I had already done that previously, so
+that's why it didn't ask me again for
+
+64
+00:05:09.095 --> 00:05:09.995
+the password.
+
+65
+00:05:09.995 --> 00:05:12.083
+But once I had typed that in,
+
+66
+00:05:12.083 --> 00:05:17.837
+then the contents of my local depository
+will be pushed to the server's site.
+
+67
+00:05:17.837 --> 00:05:25.055
+So now, the data on my local Git
+repository is now matched on the server.
+
+68
+00:05:25.055 --> 00:05:32.330
+So let's go to Bitbucket to see the status
+of my online Git repository now.
+
+69
+00:05:32.330 --> 00:05:38.370
+Going to my Bitbucket and
+then reviewing the online Git repository,
+
+70
+00:05:38.370 --> 00:05:44.260
+you would see that there
+has been a branch,
+
+71
+00:05:44.260 --> 00:05:48.870
+the master branch, that has been
+pushed to my online Git repository.
+
+72
+00:05:48.870 --> 00:05:52.600
+I can then examine the source
+by looking at the source here.
+
+73
+00:05:52.600 --> 00:05:55.850
+And then you can see that I
+have the index.html file,
+
+74
+00:05:55.850 --> 00:06:00.930
+which is exactly the same as what
+I have in my local Git repository.
+
+75
+00:06:00.930 --> 00:06:04.250
+And examine the radius comments also, so
+
+76
+00:06:04.250 --> 00:06:09.430
+I can look at the state in the second
+comment and at the first comment.
+
+77
+00:06:09.430 --> 00:06:14.861
+So you can now see that all this
+information has been uploaded
+
+78
+00:06:14.861 --> 00:06:21.450
+to the online repository,
+including the history of all the comments.
+
+79
+00:06:21.450 --> 00:06:26.550
+Then going back there,
+you can see more details about all
+
+80
+00:06:26.550 --> 00:06:31.690
+the comments that have been
+sent to the server side.
+
+81
+00:06:31.690 --> 00:06:35.290
+I can examine each of those
+comments in a bit more detail.
+
+82
+00:06:35.290 --> 00:06:38.290
+And I'm going back to the source,
+
+83
+00:06:38.290 --> 00:06:42.690
+I can look at more details
+of the source like that.
+
+84
+00:06:42.690 --> 00:06:46.699
+So that has now setup my local Git
+
+85
+00:06:46.699 --> 00:06:51.910
+repository to be mirrored in Bitbucket.
+
+86
+00:06:51.910 --> 00:06:56.760
+The procedure is pretty much
+similar even on GitHub.
+
+87
+00:06:56.760 --> 00:06:59.530
+So let me set up an online
+GitHub repository.
+
+88
+00:06:59.530 --> 00:07:04.470
+Now, obviously, you have to remember
+that your local repository can only be
+
+89
+00:07:04.470 --> 00:07:08.685
+matched to one online repository.
+
+90
+00:07:08.685 --> 00:07:13.030
+So I will only go through setting
+up the repository on GitHub, and
+
+91
+00:07:13.030 --> 00:07:18.290
+you will notice the same kind of commands
+would be required if you want to set up
+
+92
+00:07:18.290 --> 00:07:23.400
+your local repository to be
+mirrored on a repository on GitHub.
+
+93
+00:07:23.400 --> 00:07:27.310
+So on GitHub,
+if you login to your account,
+
+94
+00:07:27.310 --> 00:07:30.190
+you would see something
+like this in your homepage.
+
+95
+00:07:30.190 --> 00:07:34.880
+You can go to the right-hand side where
+there's a plus side and then click on that
+
+96
+00:07:34.880 --> 00:07:40.650
+to create a new repository, or just click
+on this button here to say new repository.
+
+97
+00:07:40.650 --> 00:07:45.167
+And then when it comes up
+I can simply say git test,
+
+98
+00:07:45.167 --> 00:07:50.670
+and then, again, as a reminder,
+please, make that a private repository.
+
+99
+00:07:50.670 --> 00:07:55.700
+Most of these providers allow you to
+now store private repositories online,
+
+100
+00:07:55.700 --> 00:08:01.110
+so why make them public unless you really
+want to share it with other people?
+
+101
+00:08:01.110 --> 00:08:05.280
+So I would strongly urge you to
+keep your repositories private for
+
+102
+00:08:05.280 --> 00:08:09.490
+the moment,
+unless you are working with a Tee.
+
+103
+00:08:09.490 --> 00:08:15.120
+I should remind you that at this moment,
+GitHub supports private repositories
+
+104
+00:08:15.120 --> 00:08:21.910
+only for those subscribers who pay for
+their GitHub account.
+
+105
+00:08:21.910 --> 00:08:27.610
+So it is not available for subscribers
+who are using their free account.
+
+106
+00:08:27.610 --> 00:08:31.060
+So simply click on private, and
+
+107
+00:08:31.060 --> 00:08:34.930
+then Create repository, and
+then that will create a repository.
+
+108
+00:08:34.930 --> 00:08:37.760
+And then you would see
+that GitHub also gives me
+
+109
+00:08:37.760 --> 00:08:42.410
+a bunch of commands here on
+how to set up the repository.
+
+110
+00:08:42.410 --> 00:08:46.500
+So for creating a new repository on
+the command line, the commands that we
+
+111
+00:08:46.500 --> 00:08:50.820
+actually had done earlier, or
+to push an existing repository,
+
+112
+00:08:50.820 --> 00:08:54.240
+the same two kinds of commands
+that have to be issued.
+
+113
+00:08:55.830 --> 00:09:00.900
+So that basically sets up
+your GitHub repository
+
+114
+00:09:02.970 --> 00:09:06.270
+to mirror your local repository.
+
+115
+00:09:06.270 --> 00:09:10.805
+So since I have already linked
+my repository to Bitbucket,
+
+116
+00:09:10.805 --> 00:09:15.352
+I'm not going to use my GitHub
+repository for the purpose.
+
+117
+00:09:15.352 --> 00:09:23.220
+So as you noticed, the procedure is pretty
+much similar on either one of them.
+
+118
+00:09:23.220 --> 00:09:28.640
+Give and take a few differences
+in the way the information
+
+119
+00:09:28.640 --> 00:09:33.030
+is rendered on the screen in the user
+interface and a little bit of changes.
+
+120
+00:09:33.030 --> 00:09:38.314
+More or less, they are similar in debate
+the way you're going to make use of them
+
+121
+00:09:38.314 --> 00:09:44.480
+in terms of mirroring your local Git
+repository to the online repository here.
+
+122
+00:09:45.490 --> 00:09:50.880
+So with this, suppose somebody
+gives you a Git repository,
+
+123
+00:09:50.880 --> 00:09:54.880
+can you make a copy of
+that on to your local one?
+
+124
+00:09:54.880 --> 00:09:59.240
+So this is where we use another
+Git command called git clone.
+
+125
+00:09:59.240 --> 00:10:02.940
+So now here, you see that I
+have this git test repository.
+
+126
+00:10:02.940 --> 00:10:07.960
+So what I'm going to do is I'm
+going to go to the suppository,
+
+127
+00:10:07.960 --> 00:10:10.708
+and then copy this URL.
+
+128
+00:10:10.708 --> 00:10:19.030
+And then I'll show you how I can
+create a copy of the Git repository or
+
+129
+00:10:19.030 --> 00:10:23.650
+clone this online repository
+into my local computer.
+
+130
+00:10:23.650 --> 00:10:29.490
+So let's pretend that I am on a different
+computer, and then we'll go to
+
+131
+00:10:29.490 --> 00:10:34.590
+our command line, and then create
+another repository with that same name.
+
+132
+00:10:36.960 --> 00:10:40.970
+Going to my command line,
+I'm just going to move up and
+
+133
+00:10:40.970 --> 00:10:43.870
+you'll see that I have my
+git-test folder there.
+
+134
+00:10:43.870 --> 00:10:50.990
+So I'm going to create another temporary
+folder here just to show you that
+
+135
+00:10:52.490 --> 00:10:56.180
+I can clone an online Git repository
+service in my temporary folder.
+
+136
+00:10:56.180 --> 00:10:57.770
+You see that it is empty.
+
+137
+00:10:58.950 --> 00:11:04.400
+So to review the command, it says
+git clone and the repository's URL.
+
+138
+00:11:04.400 --> 00:11:08.380
+So let's apply this command and
+clone the online Git repository.
+
+139
+00:11:09.630 --> 00:11:15.158
+Pretending that we are on another
+computer, so I'm going to say git clone.
+
+140
+00:11:15.158 --> 00:11:23.550
+And then, Paste the URL of my
+Bitbucket repository here.
+
+141
+00:11:23.550 --> 00:11:28.060
+And then you would see that that
+repository will now get cloned
+
+142
+00:11:28.060 --> 00:11:31.876
+into a local folder of the same name,
+git-test.
+
+143
+00:11:31.876 --> 00:11:35.225
+So now,
+if I do a listing of the directory,
+
+144
+00:11:35.225 --> 00:11:39.420
+you can see the be git-test
+folder has been created.
+
+145
+00:11:39.420 --> 00:11:44.870
+So let's go to the git-test folder,
+and then you will see that
+
+146
+00:11:44.870 --> 00:11:49.950
+this is an exact copy of the folder
+structure that we had created earlier.
+
+147
+00:11:49.950 --> 00:11:55.330
+So this is how you can clone
+an online Git repository.
+
+148
+00:11:55.330 --> 00:12:00.160
+So, all you need to do is obtain
+the URL of that Git repository, and
+
+149
+00:12:00.160 --> 00:12:05.990
+then simply use git clone to get a copy
+of that onto your local computer.
+
+150
+00:12:07.750 --> 00:12:14.500
+With this, we complete this exercise
+on using online Git repositories.
+
+151
+00:12:14.500 --> 00:12:15.909
+So did you finally Git it?
+
+152
+00:12:15.909 --> 00:12:19.183
+[MUSIC]

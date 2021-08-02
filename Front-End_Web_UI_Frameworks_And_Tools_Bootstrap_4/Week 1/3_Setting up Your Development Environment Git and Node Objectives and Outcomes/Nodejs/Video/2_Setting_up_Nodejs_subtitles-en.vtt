@@ -1,0 +1,113 @@
+WEBVTT
+
+1
+00:00:04.190 --> 00:00:11.405
+So, are you all excited and rubbing your hands eagerly to get hold of Node.js?
+
+2
+00:00:11.405 --> 00:00:13.095
+You don't need to wait for too long.
+
+3
+00:00:13.095 --> 00:00:18.905
+Let's just head over to nodejs.org and get hold of Node.js.
+
+4
+00:00:18.905 --> 00:00:26.350
+In your browser, head over to nodejs.org and as you browse down,
+
+5
+00:00:26.350 --> 00:00:32.145
+you'll see the download buttons for Node.js for your specific platform.
+
+6
+00:00:32.145 --> 00:00:35.960
+In this case, it shows the download buttons for MacOS.
+
+7
+00:00:35.960 --> 00:00:39.895
+So, click on the current version of Node.js.
+
+8
+00:00:39.895 --> 00:00:46.020
+Click on that to download the installer package for your platform.
+
+9
+00:00:48.700 --> 00:00:52.455
+Once you get hold of the installer package,
+
+10
+00:00:52.455 --> 00:00:56.250
+double click on it to start installing Node.js.
+
+11
+00:00:56.250 --> 00:00:58.090
+Depending on your operating system,
+
+12
+00:00:58.090 --> 00:01:02.670
+you will see a window like this on your computer and just follow
+
+13
+00:01:02.670 --> 00:01:08.230
+along the instructions to install Node.js on your machine.
+
+14
+00:01:08.230 --> 00:01:13.660
+You may need administrative privileges to install Node.js on your machine.
+
+15
+00:01:13.660 --> 00:01:18.540
+So make sure that you are logged in into an administrator account and
+
+16
+00:01:18.540 --> 00:01:24.465
+install Node.js to be accessible by all users that are logged in on the computer.
+
+17
+00:01:24.465 --> 00:01:26.930
+And once the installation is complete,
+
+18
+00:01:26.930 --> 00:01:31.385
+let's go ahead and verify that Node.js has been installed correctly.
+
+19
+00:01:31.385 --> 00:01:37.380
+Open up a terminal window or a command window and add the prompt,
+
+20
+00:01:37.380 --> 00:01:44.365
+type node-v to check the version of node installed.
+
+21
+00:01:44.365 --> 00:01:51.880
+Similarly, check npm-v to check the version of NPM installed.
+
+22
+00:01:51.880 --> 00:01:56.130
+I am starting with these versions of node and NPM,
+
+23
+00:01:56.130 --> 00:01:59.970
+and the subsequent exercises will be based on these.
+
+24
+00:01:59.970 --> 00:02:02.315
+Even if you install the later version,
+
+25
+00:02:02.315 --> 00:02:05.775
+I'm pretty sure that it would be backward compatible.
+
+26
+00:02:05.775 --> 00:02:09.760
+So all the steps should work pretty much the same.
+
+27
+00:02:09.760 --> 00:02:13.140
+With this, we complete the installation of Node.js.
+
+28
+00:02:13.140 --> 00:02:18.950
+So let's go ahead and make use of Node.js in the next exercise.

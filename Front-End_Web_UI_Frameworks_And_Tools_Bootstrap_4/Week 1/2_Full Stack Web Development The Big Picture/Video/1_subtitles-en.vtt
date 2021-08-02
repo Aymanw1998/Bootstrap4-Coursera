@@ -1,0 +1,257 @@
+WEBVTT
+
+1
+00:00:02.230 --> 00:00:06.260
+What is Full Stack Web Development?
+
+2
+00:00:06.260 --> 00:00:09.240
+Let me clarify to you a few terms So,
+
+3
+00:00:09.240 --> 00:00:11.915
+that we started a common understanding of
+
+4
+00:00:11.915 --> 00:00:17.895
+full stack web development as applied in this special session.
+
+5
+00:00:17.895 --> 00:00:22.360
+We often hear people talking about the frond end and back end.
+
+6
+00:00:22.360 --> 00:00:28.095
+The frond end is where we are delivering the content to the user, typically,
+
+7
+00:00:28.095 --> 00:00:32.135
+in a browser where they use accesses the information,
+
+8
+00:00:32.135 --> 00:00:36.800
+and this is where we use technologies like HTML,
+
+9
+00:00:36.800 --> 00:00:41.435
+CSS and JavaScript to render the content for to the user.
+
+10
+00:00:41.435 --> 00:00:48.275
+This information delivery is supported behind the scenes by
+
+11
+00:00:48.275 --> 00:00:56.825
+a back end support which is typically implemented these days using technologies like PHP,
+
+12
+00:00:56.825 --> 00:01:02.670
+Java, ASP.NET, Ruby, Python or NodeJS.
+
+13
+00:01:02.670 --> 00:01:08.279
+We often hear people talking about the three tier architecture for Web Development.
+
+14
+00:01:08.279 --> 00:01:14.235
+In this approach, the entire web application is organized into three different layers.
+
+15
+00:01:14.235 --> 00:01:20.500
+The presentation layer, which is concerned with delivering the to the user,
+
+16
+00:01:20.500 --> 00:01:21.545
+So, this is usually
+
+17
+00:01:21.545 --> 00:01:26.710
+the UI-related concerns that are dealt with at the presentation layer.
+
+18
+00:01:26.710 --> 00:01:29.070
+The Business Logic Layer, on the other hand,
+
+19
+00:01:29.070 --> 00:01:32.670
+is concerned more about the data, the data validation,
+
+20
+00:01:32.670 --> 00:01:34.570
+the dynamic content processing,
+
+21
+00:01:34.570 --> 00:01:39.260
+and generating the content to be delivered to the user.
+
+22
+00:01:39.260 --> 00:01:42.500
+This is backed up behind the scenes
+
+23
+00:01:42.500 --> 00:01:46.030
+with the data persistence layer or the data access layer.
+
+24
+00:01:46.030 --> 00:01:52.000
+So, this is concerned with how we store and interact with the data,
+
+25
+00:01:52.000 --> 00:01:58.650
+typically, in the form of a database and access this data through an API.
+
+26
+00:01:58.650 --> 00:02:02.950
+Exploring this further, let us see what is implemented
+
+27
+00:02:02.950 --> 00:02:08.255
+typically in the traditional web development in each of these three layers.
+
+28
+00:02:08.255 --> 00:02:13.490
+The Business Logic Layer is usually implemented these days using technologies like Ruby,
+
+29
+00:02:13.490 --> 00:02:19.220
+Python, PHP, JAVA, C++ or ASP.NET.
+
+30
+00:02:19.220 --> 00:02:25.430
+This Business Logic Layer is interacting behind the scenes with
+
+31
+00:02:25.430 --> 00:02:28.260
+the persistent data typically stored in
+
+32
+00:02:28.260 --> 00:02:34.395
+a relational database and accessed by the Business Logic Layer.
+
+33
+00:02:34.395 --> 00:02:37.360
+The Business Logic Layer is also concerned
+
+34
+00:02:37.360 --> 00:02:40.970
+with the rendering of information to the front side,
+
+35
+00:02:40.970 --> 00:02:44.285
+typically, in the form of server-side rendering these days.
+
+36
+00:02:44.285 --> 00:02:47.480
+So, the HTML, CSS and JavaScript is generated on
+
+37
+00:02:47.480 --> 00:02:52.460
+the server-side and then sent over to the client side in the form of a web page.
+
+38
+00:02:52.460 --> 00:02:58.925
+In this approach, we need specialists in each of these three layers.
+
+39
+00:02:58.925 --> 00:03:01.010
+So, frond end specialists, typically,
+
+40
+00:03:01.010 --> 00:03:06.390
+would be well-versed in HTML, CSS, and JavaScript.
+
+41
+00:03:06.390 --> 00:03:10.280
+The business logic specialist would be
+
+42
+00:03:10.280 --> 00:03:14.390
+well-versed in one of the technologies that is used
+
+43
+00:03:14.390 --> 00:03:17.310
+for implementing the business logic and then you need
+
+44
+00:03:17.310 --> 00:03:24.120
+a data specialist who will be well-versed in the relational database management system.
+
+45
+00:03:24.120 --> 00:03:27.810
+There is an increasing trend towards using
+
+46
+00:03:27.810 --> 00:03:32.225
+a single language to implement the entire stack,
+
+47
+00:03:32.225 --> 00:03:37.530
+this being JavaScript so you could have the frond end implemented,
+
+48
+00:03:37.530 --> 00:03:43.800
+for example, as a single page application using frameworks like Angular or React.
+
+49
+00:03:43.800 --> 00:03:46.450
+You have the server-side or
+
+50
+00:03:46.450 --> 00:03:51.080
+the Business Logic Layer being implemented using technologies like NodeJS,
+
+51
+00:03:51.080 --> 00:03:56.165
+which is also dependent on and JavaScript and then you have the data storage, itself,
+
+52
+00:03:56.165 --> 00:03:59.525
+being implemented using technologies like MongoDB,
+
+53
+00:03:59.525 --> 00:04:03.605
+which stores data in the form of JSON documents.
+
+54
+00:04:03.605 --> 00:04:10.640
+And the information exchange between the server side and the client side is usually
+
+55
+00:04:10.640 --> 00:04:19.690
+done using JSON as the format and the server side supports a REST API endpoint.
+
+56
+00:04:19.690 --> 00:04:24.990
+We will cover these technologies as part of this specialization.
+
+57
+00:04:24.990 --> 00:04:27.875
+So, as you go through the specialization,
+
+58
+00:04:27.875 --> 00:04:31.370
+you will see that on the presentation layer side,
+
+59
+00:04:31.370 --> 00:04:35.510
+we will cover Bootstrap four and Angular or
+
+60
+00:04:35.510 --> 00:04:40.420
+React for implementing frond end applications while on
+
+61
+00:04:40.420 --> 00:04:45.115
+the Business Logic Layer we will be using NodeJS and NodeJS modules
+
+62
+00:04:45.115 --> 00:04:51.100
+and express for implementing the Business Logic Layer.
+
+63
+00:04:51.100 --> 00:04:54.720
+We will also consider back end as a service and
+
+64
+00:04:54.720 --> 00:04:59.400
+then the data support implemented using MongoDB.

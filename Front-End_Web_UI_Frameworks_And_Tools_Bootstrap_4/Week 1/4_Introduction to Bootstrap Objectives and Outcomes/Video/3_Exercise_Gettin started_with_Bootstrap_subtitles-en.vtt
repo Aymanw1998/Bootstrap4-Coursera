@@ -1,0 +1,765 @@
+WEBVTT
+
+1
+00:00:03.910 --> 00:00:06.210
+Strap on your boots,
+
+2
+00:00:06.210 --> 00:00:08.470
+and let's get started with Bootstrap.
+
+3
+00:00:08.470 --> 00:00:13.045
+I'm sure your fingers are itching to get your hands around Bootstrap.
+
+4
+00:00:13.045 --> 00:00:18.250
+So, first step, go to
+
+5
+00:00:18.250 --> 00:00:22.280
+the exercise instructions that follow this video
+
+6
+00:00:22.280 --> 00:00:27.805
+in your Bootstrap course page on Coursera.
+
+7
+00:00:27.805 --> 00:00:29.840
+And then in the instructions,
+
+8
+00:00:29.840 --> 00:00:35.520
+you will see a link to this file Bootstrap4-starter.zip.
+
+9
+00:00:35.520 --> 00:00:39.695
+Download the zip file to your computer.
+
+10
+00:00:39.695 --> 00:00:46.610
+Also, the step-by-step instructions that are illustrated in this video will
+
+11
+00:00:46.610 --> 00:00:52.995
+also be given in the exercise instructions that follow this video.
+
+12
+00:00:52.995 --> 00:01:00.595
+There, you will have access to any of the code snippets that you need for this exercise.
+
+13
+00:01:00.595 --> 00:01:04.920
+This would be the case for all the exercises in the future, too.
+
+14
+00:01:04.920 --> 00:01:08.125
+So, should you need to get hold of the code snippets,
+
+15
+00:01:08.125 --> 00:01:10.145
+that is where you will find them.
+
+16
+00:01:10.145 --> 00:01:12.180
+Once you download the zip file,
+
+17
+00:01:12.180 --> 00:01:16.230
+move that zip file to a convenient location on your computer.
+
+18
+00:01:16.230 --> 00:01:23.375
+So, here, I have moved it to a folder named Coursera on my computer,
+
+19
+00:01:23.375 --> 00:01:27.145
+and then I have the zip file with this long name there.
+
+20
+00:01:27.145 --> 00:01:28.765
+Just unzip the file.
+
+21
+00:01:28.765 --> 00:01:30.445
+Once you unzip the file,
+
+22
+00:01:30.445 --> 00:01:36.715
+you will find a folder named Bootstrap4 created in your computer.
+
+23
+00:01:36.715 --> 00:01:38.965
+Inside the Bootstrap4 folder,
+
+24
+00:01:38.965 --> 00:01:42.450
+you will see another folder named conFusion, there.
+
+25
+00:01:42.450 --> 00:01:46.260
+Go into the conFusion folder and you would see two files there,
+
+26
+00:01:46.260 --> 00:01:49.600
+index.html and package.json file.
+
+27
+00:01:49.600 --> 00:01:53.795
+Now, open a command window or
+
+28
+00:01:53.795 --> 00:02:00.290
+a terminal and then move to this folder in your command window or terminal.
+
+29
+00:02:00.290 --> 00:02:05.125
+At the command prompt, type npm install.
+
+30
+00:02:05.125 --> 00:02:09.150
+Note that I already have the package.json file in there.
+
+31
+00:02:09.150 --> 00:02:12.745
+So the package.json file is configured so that
+
+32
+00:02:12.745 --> 00:02:19.200
+the lite-server development dependency would be installed if I type npm install.
+
+33
+00:02:19.200 --> 00:02:21.150
+So, once you type npm install,
+
+34
+00:02:21.150 --> 00:02:27.160
+you will see that the lite-server will be installed in your node_modules folder each.
+
+35
+00:02:27.160 --> 00:02:30.415
+Once this is complete,
+
+36
+00:02:30.415 --> 00:02:35.930
+open this folder in your favorite editor.
+
+37
+00:02:35.930 --> 00:02:39.060
+Once you have the folder open in your editor,
+
+38
+00:02:39.060 --> 00:02:45.170
+create a.gitignore file and
+
+39
+00:02:45.170 --> 00:02:50.530
+then put node_modules into the gitignore file and save.
+
+40
+00:02:50.530 --> 00:02:54.940
+So this is to ensure that when you do a gitcommit,
+
+41
+00:02:54.940 --> 00:02:57.615
+the node_modules folder will not be committed.
+
+42
+00:02:57.615 --> 00:03:05.475
+After that, it is time to go and fetch Bootstrap for use in our project.
+
+43
+00:03:05.475 --> 00:03:08.050
+Before we fetch Bootstrap,
+
+44
+00:03:08.050 --> 00:03:11.810
+let's do a commit of the current state of the file.
+
+45
+00:03:11.810 --> 00:03:18.535
+So, do git init and initialize your git repository.
+
+46
+00:03:18.535 --> 00:03:21.600
+Then you can check git status,
+
+47
+00:03:21.600 --> 00:03:25.290
+and you would see that these files need to be committed,
+
+48
+00:03:25.290 --> 00:03:29.315
+add all the files,
+
+49
+00:03:29.315 --> 00:03:38.885
+gitcommit -m "Initial Setup".
+
+50
+00:03:38.885 --> 00:03:43.745
+So this is the starting point of your folder at this moment.
+
+51
+00:03:43.745 --> 00:03:52.785
+So, with this, your starting point of your web project has been now committed to git.
+
+52
+00:03:52.785 --> 00:03:57.770
+Now you can set up this git to synchronize with an online repository,
+
+53
+00:03:57.770 --> 00:04:00.800
+just like we talked about in the git exercises.
+
+54
+00:04:00.800 --> 00:04:05.690
+So you can set up a repository either on Bitbucket or on Github and then
+
+55
+00:04:05.690 --> 00:04:11.430
+synchronize this project to that git repository.
+
+56
+00:04:11.430 --> 00:04:15.265
+Our next step is to go and fetch Bootstrap.
+
+57
+00:04:15.265 --> 00:04:25.260
+To do that, add the prompt type npm install bootstrap@4.0.0 and also --save,
+
+58
+00:04:25.260 --> 00:04:29.470
+and let the Bootstrap be installed.
+
+59
+00:04:29.470 --> 00:04:31.880
+Once Bootstrap is installed,
+
+60
+00:04:31.880 --> 00:04:35.535
+we realize that we also need to install its peer,
+
+61
+00:04:35.535 --> 00:04:38.975
+which is jQuery as well as Popper.js.
+
+62
+00:04:38.975 --> 00:04:46.350
+So let's go ahead and install both jQuery and Popper.js into this project folder.
+
+63
+00:04:46.350 --> 00:04:50.905
+So, to do that, add the prompt type npm install
+
+64
+00:04:50.905 --> 00:04:55.115
+jquery@3.3.1
+
+65
+00:04:55.115 --> 00:05:03.185
+and Popper.js@1.12.9 --save.
+
+66
+00:05:03.185 --> 00:05:06.385
+Now, whenever I install any of the npm packages,
+
+67
+00:05:06.385 --> 00:05:11.620
+I am explicitly specifying the version of the package that you should install.
+
+68
+00:05:11.620 --> 00:05:17.580
+The reason for this is that I want to make sure that as you go through this exercise,
+
+69
+00:05:17.580 --> 00:05:19.500
+all the steps will work correctly.
+
+70
+00:05:19.500 --> 00:05:25.380
+So I am specifying the exact version of the npm modules to be installed.
+
+71
+00:05:25.380 --> 00:05:33.235
+So, here, we are installing the jQuery version 3.3.1 and Popper.js version 1.12.9.
+
+72
+00:05:33.235 --> 00:05:40.895
+Subsequently, also, I will specify the exact versions of the modules to be installed.
+
+73
+00:05:40.895 --> 00:05:44.130
+So let's go ahead and install these.
+
+74
+00:05:46.530 --> 00:05:49.030
+And once they are installed,
+
+75
+00:05:49.030 --> 00:05:51.055
+we can go to the next step.
+
+76
+00:05:51.055 --> 00:05:55.615
+Going back to our project folder,
+
+77
+00:05:55.615 --> 00:05:58.070
+you would see that if you go into node_modules,
+
+78
+00:05:58.070 --> 00:06:02.675
+you will see a folder in there named Bootstrap.
+
+79
+00:06:02.675 --> 00:06:04.865
+And inside the folder named Bootstrap,
+
+80
+00:06:04.865 --> 00:06:07.845
+you'll find a folder named dist.
+
+81
+00:06:07.845 --> 00:06:09.910
+So, inside dist folder,
+
+82
+00:06:09.910 --> 00:06:13.705
+you'll find two sub-folders named CSS and js.
+
+83
+00:06:13.705 --> 00:06:15.775
+If you go into the CSS folder,
+
+84
+00:06:15.775 --> 00:06:20.820
+you'll find a whole bunch of precompiled CSS files here.
+
+85
+00:06:20.820 --> 00:06:27.630
+The one that is of interest to us at the start is Bootstrap min.css.
+
+86
+00:06:27.630 --> 00:06:31.620
+That's the file that we are going to include into our
+
+87
+00:06:31.620 --> 00:06:36.020
+index.html file in order to make use of Bootstrap in our project.
+
+88
+00:06:36.020 --> 00:06:38.820
+Similarly, going to the js folder,
+
+89
+00:06:38.820 --> 00:06:42.165
+you would see that there is a Bootstrap min.js file.
+
+90
+00:06:42.165 --> 00:06:45.680
+We're going to include that also into our index.htm.
+
+91
+00:06:45.680 --> 00:06:48.790
+So that'll be the next step that you will see me doing.
+
+92
+00:06:48.790 --> 00:06:51.215
+Before we go to the next step,
+
+93
+00:06:51.215 --> 00:06:55.550
+let's start up our lite-server so that we can see the changes that we make to the
+
+94
+00:06:55.550 --> 00:07:01.860
+index.html immediately reflected into our web page in real time.
+
+95
+00:07:01.860 --> 00:07:03.630
+So let's start up lite-servers.
+
+96
+00:07:03.630 --> 00:07:07.240
+So, type the prompt type npm start,
+
+97
+00:07:07.240 --> 00:07:09.915
+and then that should start up your lite-server.
+
+98
+00:07:09.915 --> 00:07:13.485
+You can now see, on the screen,
+
+99
+00:07:13.485 --> 00:07:21.785
+my editor on the left and the current version of the index.html page on the right.
+
+100
+00:07:21.785 --> 00:07:23.215
+So, as you can see,
+
+101
+00:07:23.215 --> 00:07:27.615
+I have already configured the index.html page with some content.
+
+102
+00:07:27.615 --> 00:07:33.820
+This web page looks like the typical web page of a computer science professor.
+
+103
+00:07:33.820 --> 00:07:41.170
+Let's now open the index.html page in our editor.
+
+104
+00:07:41.170 --> 00:07:45.645
+And then in the head part of the index.html page,
+
+105
+00:07:45.645 --> 00:07:47.360
+right before the title,
+
+106
+00:07:47.360 --> 00:07:49.935
+I'm going to paste in a little bit of code.
+
+107
+00:07:49.935 --> 00:07:53.730
+This code snippet is given to you in the instructions.
+
+108
+00:07:53.730 --> 00:07:56.740
+So you can simply copy and paste this code snippet,
+
+109
+00:07:56.740 --> 00:08:00.765
+and I'll walk you through what this code snippet is trying to do.
+
+110
+00:08:00.765 --> 00:08:05.585
+You will notice that I have three meta tags here.
+
+111
+00:08:05.585 --> 00:08:09.130
+The first one says charset="utf-8".
+
+112
+00:08:09.130 --> 00:08:11.860
+So this is the unicode that is going to be used.
+
+113
+00:08:11.860 --> 00:08:17.675
+The second line which says meta name="viewport",
+
+114
+00:08:17.675 --> 00:08:21.100
+I'm going to come back and explain this particular line to
+
+115
+00:08:21.100 --> 00:08:25.745
+you in the next lesson when we will look at responsive web design.
+
+116
+00:08:25.745 --> 00:08:30.100
+Now, let me draw your attention to this particular line which
+
+117
+00:08:30.100 --> 00:08:34.840
+says link rel="stylesheet", and then href.
+
+118
+00:08:34.840 --> 00:08:43.495
+Note that I am specifying href as "node_modules/bootstrap/dist/css/bootstrap.min.css".
+
+119
+00:08:43.495 --> 00:08:49.150
+So what I am specifying is that the bootstrap.min.css file,
+
+120
+00:08:49.150 --> 00:08:52.970
+which contains the CSS classes corresponding to Bootstrap that we have
+
+121
+00:08:52.970 --> 00:08:57.995
+downloaded using NPM to our node_modules folder,
+
+122
+00:08:57.995 --> 00:09:05.350
+I'm going to include that into the head of my index.html page.
+
+123
+00:09:05.350 --> 00:09:09.370
+So you need to include the CSS classes provided by Bootstrap.
+
+124
+00:09:09.370 --> 00:09:15.150
+You also need to include the JavaScript classes provided by Bootstrap,
+
+125
+00:09:15.150 --> 00:09:19.445
+which we're going to do at the bottom of this page.
+
+126
+00:09:19.445 --> 00:09:23.465
+Going to the bottom of this page, note,
+
+127
+00:09:23.465 --> 00:09:27.400
+just before the closing body tag,
+
+128
+00:09:27.400 --> 00:09:32.820
+I'm going to paste in the code to include all the scripts there.
+
+129
+00:09:32.820 --> 00:09:35.105
+So, to do that,
+
+130
+00:09:35.105 --> 00:09:41.300
+I just paste in the three lines for the script to include the jQuery,
+
+131
+00:09:41.300 --> 00:09:45.085
+Popper.js, and also the Bootstrap min.js.
+
+132
+00:09:45.085 --> 00:09:48.635
+And note the order in which I have included this.
+
+133
+00:09:48.635 --> 00:09:50.895
+So the Bootstrap is at the bottom.
+
+134
+00:09:50.895 --> 00:09:57.340
+Then, since Bootstrap is dependent upon both jQuery and Popper in that order,
+
+135
+00:09:57.340 --> 00:09:59.945
+so I will first input jQuery.
+
+136
+00:09:59.945 --> 00:10:03.835
+And then after that, we input Popper, and then finally,
+
+137
+00:10:03.835 --> 00:10:09.585
+Bootstrap min.js at the bottom of the index.html file.
+
+138
+00:10:09.585 --> 00:10:13.400
+Now, this is included at the bottom of the page.
+
+139
+00:10:13.400 --> 00:10:18.665
+Because when you are loading the page from a web server,
+
+140
+00:10:18.665 --> 00:10:24.360
+you want the CSS classes to be loaded immediately so that as the page starts rendering,
+
+141
+00:10:24.360 --> 00:10:26.430
+when the JavaScript is fetched,
+
+142
+00:10:26.430 --> 00:10:29.810
+the JavaScript needs to execute in order to make changes
+
+143
+00:10:29.810 --> 00:10:33.395
+to your page with the JavaScript code,
+
+144
+00:10:33.395 --> 00:10:34.970
+and that will take a little bit of time.
+
+145
+00:10:34.970 --> 00:10:38.060
+So you don't want the user to be waiting for
+
+146
+00:10:38.060 --> 00:10:43.805
+the entire page to be loaded before they see something in their browser window.
+
+147
+00:10:43.805 --> 00:10:48.720
+So that's why we normally load the JavaScript classes
+
+148
+00:10:48.720 --> 00:10:55.325
+towards the end of our html page just before the body tech.
+
+149
+00:10:55.325 --> 00:10:58.270
+After making these changes,
+
+150
+00:10:58.270 --> 00:11:00.065
+let's save the file.
+
+151
+00:11:00.065 --> 00:11:04.420
+Now, the reason why I am showing the index.html
+
+152
+00:11:04.420 --> 00:11:09.385
+file in my editor and also the browser right next to it is,
+
+153
+00:11:09.385 --> 00:11:13.630
+the moment you save the changes that you have made to the index.html file,
+
+154
+00:11:13.630 --> 00:11:18.920
+note how the browser rendering of that file
+
+155
+00:11:18.920 --> 00:11:26.525
+immediately updates and see Bootstrap already in action on the page.
+
+156
+00:11:26.525 --> 00:11:33.150
+Right now, you'll see that your page is using Times New Roman to render all the content.
+
+157
+00:11:33.150 --> 00:11:36.130
+The moment I save the web page,
+
+158
+00:11:36.130 --> 00:11:42.670
+you notice that the fonts being used on your web page have changed.
+
+159
+00:11:42.670 --> 00:11:48.425
+Now, your web page is set up to make use of the Bootstrap classes,
+
+160
+00:11:48.425 --> 00:11:53.850
+and it is using Bootstraps default typography to render all the content.
+
+161
+00:11:53.850 --> 00:12:01.360
+Bootstrap by default uses Helvetica Neue for the font.
+
+162
+00:12:01.360 --> 00:12:06.180
+You can change the default font for bootstrap and so on,
+
+163
+00:12:06.180 --> 00:12:09.905
+but that will be beyond the scope of our discussion right now.
+
+164
+00:12:09.905 --> 00:12:15.120
+So, once you set up your index.html page and save it,
+
+165
+00:12:15.120 --> 00:12:20.710
+you will immediately see Bootstrap coming into action in our web page.
+
+166
+00:12:20.710 --> 00:12:23.675
+So this is how I'm going to keep illustrating,
+
+167
+00:12:23.675 --> 00:12:27.385
+as we add various bootstraps, CSS classes,
+
+168
+00:12:27.385 --> 00:12:30.435
+and components to our web page,
+
+169
+00:12:30.435 --> 00:12:35.720
+how the rendering of it in our browser will keep changing.
+
+170
+00:12:35.720 --> 00:12:44.860
+Now, obviously, the rendering of the page in our browser is still terrible.
+
+171
+00:12:44.860 --> 00:12:49.230
+It's better than the typical computer science professors web page,
+
+172
+00:12:49.230 --> 00:12:51.715
+but definitely not readable.
+
+173
+00:12:51.715 --> 00:12:58.320
+We need to now bring into action the various CSS classes and
+
+174
+00:12:58.320 --> 00:12:59.910
+the JavaScript components that
+
+175
+00:12:59.910 --> 00:13:06.960
+our Bootstrap web UI framework provides in order to design our web page.
+
+176
+00:13:06.960 --> 00:13:12.720
+So we will do that step by step as we go through this exercise.
+
+177
+00:13:12.720 --> 00:13:18.535
+This may be a convenient time for you to do a git commit of
+
+178
+00:13:18.535 --> 00:13:24.355
+the changes that you have made so that at the end of this exercise,
+
+179
+00:13:24.355 --> 00:13:30.365
+your state of your project folder will be saved to your git repository.
+
+180
+00:13:30.365 --> 00:13:36.610
+Going to my conFusion folder in another tab of my terminal window,
+
+181
+00:13:36.610 --> 00:13:38.990
+if I type git status,
+
+182
+00:13:38.990 --> 00:13:44.455
+I now see that my index.html file and the package of JSON file have been modified.
+
+183
+00:13:44.455 --> 00:13:47.930
+So I'm going to do a commit.
+
+184
+00:13:59.540 --> 00:14:04.635
+So, now, my status of
+
+185
+00:14:04.635 --> 00:14:10.610
+the folder at the end of this exercise has been committed to my git repository.
+
+186
+00:14:10.610 --> 00:14:13.920
+You can synchronize that with your online repository so that
+
+187
+00:14:13.920 --> 00:14:18.390
+the state of your project will be saved at this point.
+
+188
+00:14:18.390 --> 00:14:24.955
+With this, we complete our first Bootstrap exercise.
+
+189
+00:14:24.955 --> 00:14:33.210
+You have now seen how we can configure Bootstrap to be used in our web project.
+
+190
+00:14:33.210 --> 00:14:36.140
+As we proceed to the next few exercises,
+
+191
+00:14:36.140 --> 00:14:42.470
+we're going to employee the Bootstrap classes to design our web pages.

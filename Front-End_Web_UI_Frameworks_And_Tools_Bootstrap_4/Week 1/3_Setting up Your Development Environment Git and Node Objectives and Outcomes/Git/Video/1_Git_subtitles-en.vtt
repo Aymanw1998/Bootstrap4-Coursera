@@ -1,0 +1,417 @@
+WEBVTT
+
+1
+00:00:00.022 --> 00:00:04.156
+[MUSIC]
+
+2
+00:00:04.156 --> 00:00:08.210
+Git is a very popular version
+control system for software.
+
+3
+00:00:09.250 --> 00:00:12.420
+We need Git for working with our node
+
+4
+00:00:12.420 --> 00:00:16.520
+ecosystem that we're going to use
+throughout this specialization.
+
+5
+00:00:16.520 --> 00:00:20.380
+So it is important for
+you to get Git on to your computer.
+
+6
+00:00:20.380 --> 00:00:26.820
+So let's go through a few quick steps
+to set up Git on your computer and
+
+7
+00:00:26.820 --> 00:00:33.850
+then some quick commands to enable us to
+make use of Git in this specialization.
+
+8
+00:00:35.680 --> 00:00:40.180
+I will not go into too much details
+about version control and how Git works,
+
+9
+00:00:40.180 --> 00:00:41.200
+and so on.
+
+10
+00:00:41.200 --> 00:00:43.580
+That is beyond the scope of this course.
+
+11
+00:00:43.580 --> 00:00:48.770
+Instead, we'll just get some
+basic understanding of Git.
+
+12
+00:00:48.770 --> 00:00:51.470
+Git is, as I said,
+a version control system.
+
+13
+00:00:51.470 --> 00:00:54.370
+This is a software tool
+that enables us for
+
+14
+00:00:54.370 --> 00:00:59.570
+the management of changes to source code
+and maintaining your version history.
+
+15
+00:00:59.570 --> 00:01:01.460
+So as your source code evolves,
+
+16
+00:01:01.460 --> 00:01:06.610
+you will be able to check in the code
+at different points of times so
+
+17
+00:01:06.610 --> 00:01:12.640
+that you can always have a way of
+rolling back to a previous version,
+
+18
+00:01:12.640 --> 00:01:17.510
+in case your updates to the code
+doesn't work correctly.
+
+19
+00:01:17.510 --> 00:01:22.350
+There are various version control systems
+that are in use in the real world,
+
+20
+00:01:22.350 --> 00:01:25.220
+including CVS, SVN, and
+
+21
+00:01:25.220 --> 00:01:30.330
+Git being a very popular mechanism for
+version control these days.
+
+22
+00:01:31.830 --> 00:01:33.860
+Where did Git originate?
+
+23
+00:01:33.860 --> 00:01:40.820
+Git was designed by Linus Torvalds, the
+person behind the Linux Operating System.
+
+24
+00:01:40.820 --> 00:01:44.630
+Git was designed as a version control
+system and distributed version control
+
+25
+00:01:44.630 --> 00:01:50.320
+system for
+use in Linux kernel development and
+
+26
+00:01:50.320 --> 00:01:56.610
+it has seen much wider deployment
+in the real world, these days.
+
+27
+00:01:56.610 --> 00:02:00.830
+That node ecosystem is very
+much tied into Git and
+
+28
+00:02:00.830 --> 00:02:04.780
+that is the reason why we need Git for
+this specialization.
+
+29
+00:02:06.600 --> 00:02:10.720
+Let's now move on to
+a Few hands on exercises,
+
+30
+00:02:10.720 --> 00:02:13.220
+where you will first set up Git.
+
+31
+00:02:13.220 --> 00:02:16.330
+Then you will learn a few
+basic Git commands.
+
+32
+00:02:16.330 --> 00:02:21.300
+And then also understand how you
+can set up an online repository
+
+33
+00:02:21.300 --> 00:02:25.610
+in places like Git Hub or Bit Bucket for
+
+34
+00:02:25.610 --> 00:02:32.190
+synchronizing your source code from
+your computer to the online repository.
+
+35
+00:02:32.190 --> 00:02:37.160
+This is obviously not a comprehensive
+tutorial on the Git but we'll learn just
+
+36
+00:02:37.160 --> 00:02:42.439
+enough, that of the commands that are
+necessary for use in this specialization.
+
+37
+00:02:43.710 --> 00:02:47.900
+Let's now run through a few quick
+steps to set up Git on your computer.
+
+38
+00:02:49.450 --> 00:02:52.200
+One easy way of setting
+up Git on a computer
+
+39
+00:02:52.200 --> 00:02:56.790
+is to go to this site called git-sem.com.
+
+40
+00:02:56.790 --> 00:03:01.010
+And then download the Git
+installation files from there.
+
+41
+00:03:01.010 --> 00:03:06.060
+So when you visit this website,
+git.scm.com, you will see on
+
+42
+00:03:06.060 --> 00:03:11.450
+the right-hand side, here,
+a button for you to download to Git.
+
+43
+00:03:11.450 --> 00:03:17.330
+If you want to you can go directly to
+the Downloads page here on the site,
+
+44
+00:03:17.330 --> 00:03:21.110
+and then you will find the downloads for
+various platforms and
+
+45
+00:03:21.110 --> 00:03:24.790
+you can download the one for
+your specific platform for installation.
+
+46
+00:03:24.790 --> 00:03:29.300
+This is the easiest way of
+getting Git onto your computer.
+
+47
+00:03:29.300 --> 00:03:33.700
+There are other ways of setting up Git,
+depending on your platform.
+
+48
+00:03:33.700 --> 00:03:39.220
+For example, if you install
+GitHub Desktop on your computer,
+
+49
+00:03:39.220 --> 00:03:41.450
+it'll automatically set up Git for you.
+
+50
+00:03:41.450 --> 00:03:44.710
+If you are using a Mac and
+you set up x code and
+
+51
+00:03:44.710 --> 00:03:49.340
+especially the x code command line tools,
+that will also set up Git for you.
+
+52
+00:03:49.340 --> 00:03:54.590
+On this site, gitscm.com,
+if you go to the documentation page you
+
+53
+00:03:54.590 --> 00:04:00.640
+will notice that there is
+a book here called Pro Git.
+
+54
+00:04:00.640 --> 00:04:04.610
+You can just go on to
+the Getting Started link.
+
+55
+00:04:04.610 --> 00:04:10.720
+You will see a specific chapter
+here on Installing git.
+
+56
+00:04:10.720 --> 00:04:15.640
+So just go to this Installing Git site and
+there you have more details
+
+57
+00:04:15.640 --> 00:04:20.450
+about how to install Git
+on your specific platform.
+
+58
+00:04:20.450 --> 00:04:24.180
+So you can use any of
+the methods suggested here for
+
+59
+00:04:24.180 --> 00:04:26.400
+installing Git on your platform.
+
+60
+00:04:26.400 --> 00:04:28.100
+This is fairly straight forward so
+
+61
+00:04:28.100 --> 00:04:31.850
+I'm not going to go through
+the details of how to do the set up.
+
+62
+00:04:31.850 --> 00:04:37.400
+Download the installer and run through
+the set up to get Git on to your computer.
+
+63
+00:04:38.590 --> 00:04:42.300
+Once you install Git on a computer
+Start up a command window or
+
+64
+00:04:42.300 --> 00:04:45.910
+PowerShell if you're
+using a Window machine or
+
+65
+00:04:45.910 --> 00:04:50.490
+start up a terminal window
+if you're using a Mac or
+
+66
+00:04:50.490 --> 00:04:54.945
+Linux machine and
+then at the prompt type in git
+
+67
+00:04:54.945 --> 00:05:01.340
+--version to check what version of
+git is installed on your computer.
+
+68
+00:05:01.340 --> 00:05:06.360
+So on my machine I have this current
+version of git installed and
+
+69
+00:05:06.360 --> 00:05:09.880
+that is good enough for me to work with.
+
+70
+00:05:09.880 --> 00:05:14.190
+Once we verify that Git is installed,
+we will configure a couple of global
+
+71
+00:05:15.740 --> 00:05:20.610
+identity parameters,
+the username and email address.
+
+72
+00:05:20.610 --> 00:05:25.180
+So that whenever Git does in
+a comics as you will learn later,
+
+73
+00:05:25.180 --> 00:05:27.410
+it will make use of this information.
+
+74
+00:05:27.410 --> 00:05:35.260
+To do that, at the prompt type
+git config --global user.name,
+
+75
+00:05:35.260 --> 00:05:39.899
+and then you can type in your user name.
+
+76
+00:05:44.847 --> 00:05:48.333
+The other parameter that I'm
+going to configure is my email.
+
+77
+00:06:00.676 --> 00:06:06.446
+And to insure that this
+information has been configured,
+
+78
+00:06:06.446 --> 00:06:09.280
+we can type git config list.
+
+79
+00:06:09.280 --> 00:06:13.440
+And it will list out a bunch of
+configurations that we have.
+
+80
+00:06:13.440 --> 00:06:14.010
+Done.
+
+81
+00:06:14.010 --> 00:06:16.470
+Some of these are automatically set up for
+you.
+
+82
+00:06:16.470 --> 00:06:20.010
+But if you want to,
+you can set them up as you require.
+
+83
+00:06:20.010 --> 00:06:24.840
+So here I have my core
+editor value set to vi,
+
+84
+00:06:24.840 --> 00:06:30.860
+which is what I use to do
+command line editing of files.
+
+85
+00:06:32.390 --> 00:06:38.890
+So, with this, we have completed
+the setup git for use on our computer.
+
+86
+00:06:39.900 --> 00:06:44.827
+Once you get git on your computer it
+is time to go and learn git bit by bit.
+
+87
+00:06:44.827 --> 00:06:48.369
+[MUSIC]
